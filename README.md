@@ -4,12 +4,28 @@ Codex-format skills for SEO workflows, converted from Claude-style skills and or
 
 ## What Is In This Repo
 
+- `blog/`: Top-level blog orchestrator skill with shared references, templates, and scripts
+- `blog-*`: Specialized sub-skills (write, rewrite, analyze, strategy, schema, and more)
 - `seo/`: Top-level SEO orchestrator skill with shared references, templates, and scripts
 - `seo-*`: Specialized sub-skills (audit, content, schema, technical, sitemap, GEO, and more)
 - `docs/`: Contributor and migration documentation
 
 ## Current Skill Set
 
+- `blog`
+- `blog-write`
+- `blog-rewrite`
+- `blog-analyze`
+- `blog-brief`
+- `blog-calendar`
+- `blog-strategy`
+- `blog-outline`
+- `blog-seo-check`
+- `blog-schema`
+- `blog-repurpose`
+- `blog-geo`
+- `blog-audit`
+- `blog-chart` (internal helper)
 - `seo`
 - `seo-audit`
 - `seo-page`
@@ -33,6 +49,15 @@ Codex-format skills for SEO workflows, converted from Claude-style skills and or
 ├── docs/
 │   ├── skill-format.md
 │   └── migration-claude-to-codex.md
+├── blog/
+│   ├── SKILL.md
+│   ├── agents/openai.yaml
+│   ├── references/
+│   ├── templates/
+│   └── scripts/
+├── blog-*/
+│   ├── SKILL.md
+│   └── agents/openai.yaml
 ├── seo/
 │   ├── SKILL.md
 │   ├── agents/openai.yaml
@@ -66,3 +91,7 @@ This is an early scaffolded repo with a complete first batch of SEO skills and c
 The SEO skills in this repository were originally sourced from:
 
 - [AgriciDaniel/claude-seo](https://github.com/AgriciDaniel/claude-seo)
+
+The blog skills in this repository were originally sourced from:
+
+- [AgriciDaniel/claude-blog](https://github.com/AgriciDaniel/claude-blog)

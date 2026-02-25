@@ -1,0 +1,4 @@
+interface:
+  display_name: "Blog Analyze"
+  short_description: "Help with Blog Analyze tasks and workflows"
+  default_prompt: "Use $blog-analyze to handle this blog/content task and provide an actionable result."

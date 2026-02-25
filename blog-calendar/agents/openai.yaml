@@ -1,0 +1,4 @@
+interface:
+  display_name: "Blog Calendar"
+  short_description: "Help with Blog Calendar tasks and workflows"
+  default_prompt: "Use $blog-calendar to handle this blog/content task and provide an actionable result."

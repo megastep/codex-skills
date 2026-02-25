@@ -1,0 +1,4 @@
+interface:
+  display_name: "Blog Schema"
+  short_description: "Help with Blog Schema tasks and workflows"
+  default_prompt: "Use $blog-schema to handle this blog/content task and provide an actionable result."

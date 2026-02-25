@@ -9,7 +9,9 @@ Usage:
 """
 
 import argparse
+import ipaddress
 import os
+import socket
 import sys
 from urllib.parse import urlparse
 
@@ -28,6 +30,73 @@ VIEWPORTS = {
 }
 
 
+def _is_public_ip(ip: ipaddress._BaseAddress) -> bool:
+    return not (
+        ip.is_private
+        or ip.is_loopback
+        or ip.is_reserved
+        or ip.is_link_local
+        or ip.is_multicast
+        or ip.is_unspecified
+    )
+
+
+def _is_public_host(hostname: str) -> tuple[bool, str]:
+    if not hostname:
+        return False, "Missing hostname"
+
+    try:
+        ip = ipaddress.ip_address(hostname)
+        if not _is_public_ip(ip):
+            return False, f"Blocked non-public IP: {hostname}"
+        return True, ""
+    except ValueError:
+        pass
+
+    try:
+        addr_info = socket.getaddrinfo(hostname, None, proto=socket.IPPROTO_TCP)
+    except socket.gaierror as e:
+        return False, f"DNS resolution failed for {hostname}: {e}"
+
+    seen_ips: set[str] = set()
+    for _, _, _, _, sockaddr in addr_info:
+        ip_text = sockaddr[0]
+        if ip_text in seen_ips:
+            continue
+        seen_ips.add(ip_text)
+
+        try:
+            ip = ipaddress.ip_address(ip_text)
+        except ValueError:
+            return False, f"Invalid resolved IP for {hostname}: {ip_text}"
+
+        if not _is_public_ip(ip):
+            return False, f"Blocked non-public IP for {hostname}: {ip_text}"
+
+    return True, ""
+
+
+def _validate_url(raw_url: str) -> tuple[str | None, str | None]:
+    url = raw_url.strip()
+    parsed = urlparse(url)
+
+    if not parsed.scheme:
+        url = f"https://{url}"
+        parsed = urlparse(url)
+
+    if parsed.scheme not in ("http", "https"):
+        return None, f"Invalid URL scheme: {parsed.scheme}"
+
+    if not parsed.hostname:
+        return None, "Invalid URL: missing hostname"
+
+    is_public, reason = _is_public_host(parsed.hostname)
+    if not is_public:
+        return None, reason
+
+    return url, None
+
+
 def capture_screenshot(
     url: str,
     output_path: str,
@@ -37,16 +106,6 @@ def capture_screenshot(
 ) -> dict:
     """
     Capture a screenshot of a web page.
-
-    Args:
-        url: URL to capture
-        output_path: Output file path
-        viewport: Viewport preset (desktop, laptop, tablet, mobile)
-        full_page: Whether to capture full page or just viewport
-        timeout: Page load timeout in milliseconds
-
-    Returns:
-        Dictionary with capture results
     """
     result = {
         "url": url,
@@ -60,6 +119,11 @@ def capture_screenshot(
         result["error"] = f"Invalid viewport: {viewport}. Choose from: {list(VIEWPORTS.keys())}"
         return result
 
+    validated_url, validation_error = _validate_url(url)
+    if validation_error:
+        result["error"] = validation_error
+        return result
+
     vp = VIEWPORTS[viewport]
 
     try:
@@ -71,8 +135,49 @@ def capture_screenshot(
             )
             page = context.new_page()
 
+            # Block requests to non-http(s) or non-public hosts.
+            host_cache: dict[str, tuple[bool, str]] = {}
+
+            def route_handler(route):
+                req_url = route.request.url
+                parsed_req = urlparse(req_url)
+
+                if parsed_req.scheme in ("data", "blob", "about"):
+                    route.continue_()
+                    return
+
+                if parsed_req.scheme not in ("http", "https") or not parsed_req.hostname:
+                    route.abort()
+                    return
+
+                cached = host_cache.get(parsed_req.hostname)
+                if cached is None:
+                    cached = _is_public_host(parsed_req.hostname)
+                    host_cache[parsed_req.hostname] = cached
+
+                if not cached[0]:
+                    route.abort()
+                    return
+
+                route.continue_()
+
+            page.route("**/*", route_handler)
+
             # Navigate and wait for network idle
-            page.goto(url, wait_until="networkidle", timeout=timeout)
+            page.goto(validated_url, wait_until="networkidle", timeout=timeout)
+
+            # Validate final URL after redirects
+            parsed_final = urlparse(page.url)
+            if parsed_final.scheme not in ("http", "https") or not parsed_final.hostname:
+                browser.close()
+                result["error"] = f"Blocked final URL: {page.url}"
+                return result
+
+            is_public, reason = _is_public_host(parsed_final.hostname)
+            if not is_public:
+                browser.close()
+                result["error"] = f"Blocked final URL: {reason}"
+                return result
 
             # Wait a bit more for any lazy-loaded content
             page.wait_for_timeout(1000)
@@ -115,7 +220,7 @@ def main():
 
     # Generate filename from URL
     parsed = urlparse(args.url)
-    base_name = parsed.netloc.replace(".", "_")
+    base_name = parsed.netloc.replace(".", "_") if parsed.netloc else "page"
 
     viewports = VIEWPORTS.keys() if args.all else [args.viewport]
 

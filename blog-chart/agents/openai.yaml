@@ -1,0 +1,4 @@
+interface:
+  display_name: "Blog Chart"
+  short_description: "Help with Blog Chart tasks and workflows"
+  default_prompt: "Use $blog-chart to handle this blog/content task and provide an actionable result."

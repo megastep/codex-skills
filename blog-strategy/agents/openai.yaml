@@ -1,0 +1,4 @@
+interface:
+  display_name: "Blog Strategy"
+  short_description: "Help with Blog Strategy tasks and workflows"
+  default_prompt: "Use $blog-strategy to handle this blog/content task and provide an actionable result."

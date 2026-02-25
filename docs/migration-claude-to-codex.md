@@ -10,6 +10,10 @@ Initial SEO skill conversions in this repo were sourced from:
 
 - [AgriciDaniel/claude-seo](https://github.com/AgriciDaniel/claude-seo)
 
+Initial blog skill conversions in this repo were sourced from:
+
+- [AgriciDaniel/claude-blog](https://github.com/AgriciDaniel/claude-blog)
+
 ## Migration Checklist
 
 1. Create a new skill directory in kebab-case.

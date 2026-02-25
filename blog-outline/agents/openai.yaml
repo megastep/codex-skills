@@ -1,0 +1,4 @@
+interface:
+  display_name: "Blog Outline"
+  short_description: "Help with Blog Outline tasks and workflows"
+  default_prompt: "Use $blog-outline to handle this blog/content task and provide an actionable result."

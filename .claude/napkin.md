@@ -23,3 +23,8 @@
 ## Patterns That Work
 - A short `migration-claude-to-codex.md` checklist speeds consistent skill ports.
 - Capture upstream source attribution in root docs early when migrating third-party skill packs.
+| 2026-02-25 | self | Used `in` as an `awk` variable name and hit syntax errors on BSD awk. | Avoid reserved words in awk (`in`); use neutral names like `in_fm`. |
+
+## Patterns That Work
+- For imported skill packs with shared resources, keep one shared orchestrator directory (e.g., `blog/`) and patch sub-skill paths to `../blog/...`.
+| 2026-02-25 | self | Initial multi-hunk patch failed due context mismatch. | Re-open target files and apply precise replacements in smaller steps when imported files drift from expected context. |

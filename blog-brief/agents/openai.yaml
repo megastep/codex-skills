@@ -1,0 +1,4 @@
+interface:
+  display_name: "Blog Brief"
+  short_description: "Help with Blog Brief tasks and workflows"
+  default_prompt: "Use $blog-brief to handle this blog/content task and provide an actionable result."

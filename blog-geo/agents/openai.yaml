@@ -1,0 +1,4 @@
+interface:
+  display_name: "Blog Geo"
+  short_description: "Help with Blog Geo tasks and workflows"
+  default_prompt: "Use $blog-geo to handle this blog/content task and provide an actionable result."
