@@ -1,0 +1,4 @@
+interface:
+  display_name: "Seo Schema"
+  short_description: "Help with Seo Schema tasks"
+  default_prompt: "Use $seo-schema to handle this SEO task and provide an actionable report with prioritized fixes."

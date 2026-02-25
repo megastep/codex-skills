@@ -1,0 +1,4 @@
+interface:
+  display_name: "Seo Competitor Pages"
+  short_description: "Help with Seo Competitor Pages tasks"
+  default_prompt: "Use $seo-competitor-pages to handle this SEO task and provide an actionable report with prioritized fixes."

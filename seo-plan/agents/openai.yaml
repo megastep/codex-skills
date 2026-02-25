@@ -1,0 +1,4 @@
+interface:
+  display_name: "Seo Plan"
+  short_description: "Help with Seo Plan tasks and workflows"
+  default_prompt: "Use $seo-plan to handle this SEO task and provide an actionable report with prioritized fixes."

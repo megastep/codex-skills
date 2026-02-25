@@ -1,0 +1,4 @@
+interface:
+  display_name: "Seo Page"
+  short_description: "Help with Seo Page tasks and workflows"
+  default_prompt: "Use $seo-page to handle this SEO task and provide an actionable report with prioritized fixes."

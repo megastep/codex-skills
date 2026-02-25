@@ -1,0 +1,4 @@
+interface:
+  display_name: "Seo Hreflang"
+  short_description: "Help with Seo Hreflang tasks"
+  default_prompt: "Use $seo-hreflang to handle this SEO task and provide an actionable report with prioritized fixes."
