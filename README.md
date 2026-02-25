@@ -1,9 +1,11 @@
 # codex-skills
 
-Codex-format skills for SEO workflows, converted from Claude-style skills and organized for easy reuse.
+Codex-format skills for SEO, blog, and paid ads workflows, converted from Claude-style skills and organized for easy reuse.
 
 ## What Is In This Repo
 
+- `ads/`: Top-level paid ads orchestrator skill with shared references, research notes, and scripts
+- `ads-*`: Specialized sub-skills (audit, platform deep-dives, budget, planning, and competitor analysis)
 - `blog/`: Top-level blog orchestrator skill with shared references, templates, and scripts
 - `blog-*`: Specialized sub-skills (write, rewrite, analyze, strategy, schema, and more)
 - `seo/`: Top-level SEO orchestrator skill with shared references, templates, and scripts
@@ -12,6 +14,19 @@ Codex-format skills for SEO workflows, converted from Claude-style skills and or
 
 ## Current Skill Set
 
+- `ads`
+- `ads-audit`
+- `ads-google`
+- `ads-meta`
+- `ads-youtube`
+- `ads-linkedin`
+- `ads-tiktok`
+- `ads-microsoft`
+- `ads-creative`
+- `ads-landing`
+- `ads-budget`
+- `ads-plan`
+- `ads-competitor`
 - `blog`
 - `blog-write`
 - `blog-rewrite`
@@ -49,6 +64,16 @@ Codex-format skills for SEO workflows, converted from Claude-style skills and or
 ├── docs/
 │   ├── skill-format.md
 │   └── migration-claude-to-codex.md
+├── ads/
+│   ├── SKILL.md
+│   ├── agents/openai.yaml
+│   ├── references/
+│   ├── research-sources/
+│   └── scripts/
+├── ads-*/
+│   ├── SKILL.md
+│   ├── agents/openai.yaml
+│   └── assets/ (optional, used by `ads-plan`)
 ├── blog/
 │   ├── SKILL.md
 │   ├── agents/openai.yaml
@@ -95,3 +120,7 @@ The SEO skills in this repository were originally sourced from:
 The blog skills in this repository were originally sourced from:
 
 - [AgriciDaniel/claude-blog](https://github.com/AgriciDaniel/claude-blog)
+
+The paid ads skills in this repository were originally sourced from:
+
+- [AgriciDaniel/claude-ads](https://github.com/AgriciDaniel/claude-ads)

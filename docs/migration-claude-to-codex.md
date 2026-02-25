@@ -14,6 +14,10 @@ Initial blog skill conversions in this repo were sourced from:
 
 - [AgriciDaniel/claude-blog](https://github.com/AgriciDaniel/claude-blog)
 
+Initial paid ads skill conversions in this repo were sourced from:
+
+- [AgriciDaniel/claude-ads](https://github.com/AgriciDaniel/claude-ads)
+
 ## Migration Checklist
 
 1. Create a new skill directory in kebab-case.

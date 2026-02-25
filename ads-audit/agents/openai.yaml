@@ -1,0 +1,4 @@
+interface:
+  display_name: "Ads Audit"
+  short_description: "Help with Ads Audit tasks and workflows"
+  default_prompt: "Use $ads-audit to handle this paid ads task and provide an actionable report with prioritized fixes."

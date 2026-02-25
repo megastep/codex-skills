@@ -28,3 +28,7 @@
 ## Patterns That Work
 - For imported skill packs with shared resources, keep one shared orchestrator directory (e.g., `blog/`) and patch sub-skill paths to `../blog/...`.
 | 2026-02-25 | self | Initial multi-hunk patch failed due context mismatch. | Re-open target files and apply precise replacements in smaller steps when imported files drift from expected context. |
+| 2026-02-25 | self | Imported ads scripts had unguarded URL navigation/fetch behavior. | Apply shared URL/public-host validation + redirect/resource guard pattern to every new network script during import. |
+
+## Patterns That Work
+- During skill imports, run security hardening as part of conversion rather than as a separate cleanup pass.

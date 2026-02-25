@@ -1,0 +1,4 @@
+interface:
+  display_name: "Ads Competitor"
+  short_description: "Help with Ads Competitor tasks and workflows"
+  default_prompt: "Use $ads-competitor to handle this paid ads task and provide an actionable report with prioritized fixes."

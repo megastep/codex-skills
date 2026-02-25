@@ -1,0 +1,4 @@
+interface:
+  display_name: "Ads Google"
+  short_description: "Help with Ads Google tasks and workflows"
+  default_prompt: "Use $ads-google to handle this paid ads task and provide an actionable report with prioritized fixes."

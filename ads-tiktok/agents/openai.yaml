@@ -1,0 +1,4 @@
+interface:
+  display_name: "Ads Tiktok"
+  short_description: "Help with Ads Tiktok tasks and workflows"
+  default_prompt: "Use $ads-tiktok to handle this paid ads task and provide an actionable report with prioritized fixes."

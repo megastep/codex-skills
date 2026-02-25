@@ -1,0 +1,4 @@
+interface:
+  display_name: "Ads Creative"
+  short_description: "Help with Ads Creative tasks and workflows"
+  default_prompt: "Use $ads-creative to handle this paid ads task and provide an actionable report with prioritized fixes."

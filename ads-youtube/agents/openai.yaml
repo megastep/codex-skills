@@ -1,0 +1,4 @@
+interface:
+  display_name: "Ads Youtube"
+  short_description: "Help with Ads Youtube tasks and workflows"
+  default_prompt: "Use $ads-youtube to handle this paid ads task and provide an actionable report with prioritized fixes."
