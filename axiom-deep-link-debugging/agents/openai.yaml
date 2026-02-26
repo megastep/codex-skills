@@ -1,0 +1,6 @@
+interface:
+  display_name: "Axiom Deep Link Debugging"
+  short_description: "Use when adding debug-only deep links for testing, enabling simulator navigation to specific screens, or integrating with automated testi..."
+  icon_small: "./assets/icon.svg"
+  icon_large: "./assets/icon.svg"
+  default_prompt: "Use $axiom-deep-link-debugging for this Axiom workflow."

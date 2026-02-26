@@ -1,0 +1,6 @@
+interface:
+  display_name: "Axiom Energy Diag"
+  short_description: "Symptom-based energy troubleshooting - decision trees for 'app at top of battery settings', 'phone gets hot', 'background drain', 'high c..."
+  icon_small: "./assets/icon.svg"
+  icon_large: "./assets/icon.svg"
+  default_prompt: "Use $axiom-energy-diag for this Axiom workflow."

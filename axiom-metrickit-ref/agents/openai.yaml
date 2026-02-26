@@ -1,0 +1,6 @@
+interface:
+  display_name: "Axiom Metrickit Ref"
+  short_description: "MetricKit API reference for field diagnostics - MXMetricPayload, MXDiagnosticPayload, MXCallStackTree parsing, crash and hang collection"
+  icon_small: "./assets/icon.svg"
+  icon_large: "./assets/icon.svg"
+  default_prompt: "Use $axiom-metrickit-ref for this Axiom workflow."

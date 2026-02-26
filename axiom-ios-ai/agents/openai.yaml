@@ -1,0 +1,6 @@
+interface:
+  display_name: "Axiom Ios Ai"
+  short_description: "Use when implementing ANY Apple Intelligence or on-device AI feature. Covers Foundation Models, @Generable, LanguageModelSession, structu..."
+  icon_small: "./assets/icon.svg"
+  icon_large: "./assets/icon.svg"
+  default_prompt: "Use $axiom-ios-ai for this Axiom workflow."

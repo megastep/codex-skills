@@ -1,0 +1,6 @@
+interface:
+  display_name: "Axiom Display Performance"
+  short_description: "Use when app runs at unexpected frame rate, stuck at 60fps on ProMotion, frame pacing issues, or configuring render loops. Covers MTKView..."
+  icon_small: "./assets/icon.svg"
+  icon_large: "./assets/icon.svg"
+  default_prompt: "Use $axiom-display-performance for this Axiom workflow."

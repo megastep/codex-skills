@@ -1,0 +1,6 @@
+interface:
+  display_name: "Axiom Core Location Ref"
+  short_description: "Use for Core Location API reference - CLLocationUpdate, CLMonitor, CLServiceSession, authorization, background location, geofencing"
+  icon_small: "./assets/icon.svg"
+  icon_large: "./assets/icon.svg"
+  default_prompt: "Use $axiom-core-location-ref for this Axiom workflow."

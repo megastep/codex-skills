@@ -1,0 +1,6 @@
+interface:
+  display_name: "Axiom Swiftui Search Ref"
+  short_description: "Use when implementing SwiftUI search — .searchable, isSearching, search suggestions, scopes, tokens, programmatic search control (iOS 15-..."
+  icon_small: "./assets/icon.svg"
+  icon_large: "./assets/icon.svg"
+  default_prompt: "Use $axiom-swiftui-search-ref for this Axiom workflow."

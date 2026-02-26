@@ -1,0 +1,6 @@
+interface:
+  display_name: "Axiom Camera Capture"
+  short_description: "AVCaptureSession, camera preview, photo capture, video recording, RotationCoordinator, session interruptions, deferred processing, captur..."
+  icon_small: "./assets/icon.svg"
+  icon_large: "./assets/icon.svg"
+  default_prompt: "Use $axiom-camera-capture for this Axiom workflow."

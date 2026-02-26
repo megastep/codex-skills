@@ -1,0 +1,6 @@
+interface:
+  display_name: "Axiom App Composition"
+  short_description: "Use when structuring app entry points, managing authentication flows, switching root views, handling scene lifecycle, or asking 'how do I..."
+  icon_small: "./assets/icon.svg"
+  icon_large: "./assets/icon.svg"
+  default_prompt: "Use $axiom-app-composition for this Axiom workflow."

@@ -1,0 +1,6 @@
+interface:
+  display_name: "Axiom Avfoundation Ref"
+  short_description: "Reference — AVFoundation audio APIs, AVAudioSession categories/modes, AVAudioEngine pipelines, bit-perfect DAC output, iOS 26+ spatial au..."
+  icon_small: "./assets/icon.svg"
+  icon_large: "./assets/icon.svg"
+  default_prompt: "Use $axiom-avfoundation-ref for this Axiom workflow."

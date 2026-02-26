@@ -1,0 +1,6 @@
+interface:
+  display_name: "Axiom Apple Docs"
+  short_description: "Use when ANY question involves Apple framework APIs, Swift compiler errors, or Xcode-bundled documentation. Covers Liquid Glass, Swift 6...."
+  icon_small: "./assets/icon.svg"
+  icon_large: "./assets/icon.svg"
+  default_prompt: "Use $axiom-apple-docs for this Axiom workflow."

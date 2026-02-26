@@ -1,0 +1,6 @@
+interface:
+  display_name: "Axiom Hang Diagnostics"
+  short_description: "Use when app freezes, UI unresponsive, main thread blocked, watchdog termination, or diagnosing hang reports from Xcode Organizer or Metr..."
+  icon_small: "./assets/icon.svg"
+  icon_large: "./assets/icon.svg"
+  default_prompt: "Use $axiom-hang-diagnostics for this Axiom workflow."

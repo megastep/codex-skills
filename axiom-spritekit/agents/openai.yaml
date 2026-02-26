@@ -1,0 +1,6 @@
+interface:
+  display_name: "Axiom Spritekit"
+  short_description: "Use when building SpriteKit games, implementing physics, actions, scene management, or debugging game performance. Covers scene graph, ph..."
+  icon_small: "./assets/icon.svg"
+  icon_large: "./assets/icon.svg"
+  default_prompt: "Use $axiom-spritekit for this Axiom workflow."

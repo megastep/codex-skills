@@ -1,0 +1,6 @@
+interface:
+  display_name: "Axiom Xcode Mcp Setup"
+  short_description: "Xcode MCP setup — enable mcpbridge, per-client config, permission handling, multi-Xcode targeting, troubleshooting"
+  icon_small: "./assets/icon.svg"
+  icon_large: "./assets/icon.svg"
+  default_prompt: "Use $axiom-xcode-mcp-setup for this Axiom workflow."

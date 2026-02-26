@@ -1,0 +1,6 @@
+interface:
+  display_name: "Axiom App Store Submission"
+  short_description: "Use when preparing ANY app for App Store submission - enforces pre-flight checklist, rejection prevention, privacy compliance, and metada..."
+  icon_small: "./assets/icon.svg"
+  icon_large: "./assets/icon.svg"
+  default_prompt: "Use $axiom-app-store-submission for this Axiom workflow."

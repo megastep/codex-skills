@@ -1,0 +1,6 @@
+interface:
+  display_name: "Axiom Ios Ml Coreml Diag"
+  short_description: "CoreML diagnostics - model load failures, slow inference, memory issues, compression accuracy loss, compute unit problems, conversion err..."
+  icon_small: "./assets/icon.svg"
+  icon_large: "./assets/icon.svg"
+  default_prompt: "Use $axiom-ios-ml-coreml-diag for this Axiom workflow."

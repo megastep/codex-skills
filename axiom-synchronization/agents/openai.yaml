@@ -1,0 +1,6 @@
+interface:
+  display_name: "Axiom Synchronization"
+  short_description: "Use when needing thread-safe primitives for performance-critical code. Covers Mutex (iOS 18+), OSAllocatedUnfairLock (iOS 16+), Atomic ty..."
+  icon_small: "./assets/icon.svg"
+  icon_large: "./assets/icon.svg"
+  default_prompt: "Use $axiom-synchronization for this Axiom workflow."

@@ -1,0 +1,6 @@
+interface:
+  display_name: "Axiom Ios Testing"
+  short_description: "Use when writing ANY test, debugging flaky tests, making tests faster, or asking about Swift Testing vs XCTest. Covers unit tests, UI tes..."
+  icon_small: "./assets/icon.svg"
+  icon_large: "./assets/icon.svg"
+  default_prompt: "Use $axiom-ios-testing for this Axiom workflow."

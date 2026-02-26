@@ -1,0 +1,6 @@
+interface:
+  display_name: "Axiom Ios Vision"
+  short_description: "Use when implementing ANY computer vision feature - image analysis, object detection, pose detection, person segmentation, subject liftin..."
+  icon_small: "./assets/icon.svg"
+  icon_large: "./assets/icon.svg"
+  default_prompt: "Use $axiom-ios-vision for this Axiom workflow."

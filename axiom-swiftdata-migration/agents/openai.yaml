@@ -1,0 +1,6 @@
+interface:
+  display_name: "Axiom Swiftdata Migration"
+  short_description: "Use when creating SwiftData custom schema migrations with VersionedSchema and SchemaMigrationPlan - property type changes, relationship p..."
+  icon_small: "./assets/icon.svg"
+  icon_large: "./assets/icon.svg"
+  default_prompt: "Use $axiom-swiftdata-migration for this Axiom workflow."

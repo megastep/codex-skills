@@ -1,0 +1,6 @@
+interface:
+  display_name: "Axiom App Discoverability"
+  short_description: "Use when making app surface in Spotlight search, Siri suggestions, or system experiences - covers the 6-step strategy combining App Inten..."
+  icon_small: "./assets/icon.svg"
+  icon_large: "./assets/icon.svg"
+  default_prompt: "Use $axiom-app-discoverability for this Axiom workflow."

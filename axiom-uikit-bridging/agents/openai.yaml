@@ -1,0 +1,6 @@
+interface:
+  display_name: "Axiom Uikit Bridging"
+  short_description: "Use when wrapping UIKit views/controllers in SwiftUI, embedding SwiftUI in UIKit, or debugging UIKit-SwiftUI interop issues. Covers UIVie..."
+  icon_small: "./assets/icon.svg"
+  icon_large: "./assets/icon.svg"
+  default_prompt: "Use $axiom-uikit-bridging for this Axiom workflow."

@@ -40,6 +40,7 @@ declare -a SKILL_GROUPS=(
   "test"
   "feature"
   "swift"
+  "axiom"
 )
 
 load_available_skills() {
@@ -172,7 +173,7 @@ collect_group_skills() {
       emit_if_available "swift-expert"
       emit_if_available "typescript-pro"
       ;;
-    seo|ads|blog|devops|fullstack|database|kotlin|typescript|code|vue|react|prompt|test|feature|swift)
+    seo|ads|blog|devops|fullstack|database|kotlin|typescript|code|vue|react|prompt|test|feature|swift|axiom)
       collect_by_prefix "$group"
       ;;
     *)

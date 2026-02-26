@@ -1,0 +1,6 @@
+interface:
+  display_name: "Axiom Realitykit Diag"
+  short_description: "Use when RealityKit entities not visible, anchors not tracking, gestures not responding, performance drops, materials wrong, or multiplay..."
+  icon_small: "./assets/icon.svg"
+  icon_large: "./assets/icon.svg"
+  default_prompt: "Use $axiom-realitykit-diag for this Axiom workflow."

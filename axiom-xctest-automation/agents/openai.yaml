@@ -1,0 +1,6 @@
+interface:
+  display_name: "Axiom Xctest Automation"
+  short_description: "Use when writing, running, or debugging XCUITests. Covers element queries, waiting strategies, accessibility identifiers, test plans, and..."
+  icon_small: "./assets/icon.svg"
+  icon_large: "./assets/icon.svg"
+  default_prompt: "Use $axiom-xctest-automation for this Axiom workflow."

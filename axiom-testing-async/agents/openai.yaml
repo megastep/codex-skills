@@ -1,0 +1,6 @@
+interface:
+  display_name: "Axiom Testing Async"
+  short_description: "Use when testing async code with Swift Testing. Covers confirmation for callbacks, @MainActor tests, async/await patterns, timeout contro..."
+  icon_small: "./assets/icon.svg"
+  icon_large: "./assets/icon.svg"
+  default_prompt: "Use $axiom-testing-async for this Axiom workflow."

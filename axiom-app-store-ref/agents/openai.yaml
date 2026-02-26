@@ -1,0 +1,6 @@
+interface:
+  display_name: "Axiom App Store Ref"
+  short_description: "App Store submission reference — complete metadata field specs, App Review guideline index, privacy manifest schema, age rating system, e..."
+  icon_small: "./assets/icon.svg"
+  icon_large: "./assets/icon.svg"
+  default_prompt: "Use $axiom-app-store-ref for this Axiom workflow."

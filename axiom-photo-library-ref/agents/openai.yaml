@@ -1,0 +1,6 @@
+interface:
+  display_name: "Axiom Photo Library Ref"
+  short_description: "Reference — PHPickerViewController, PHPickerConfiguration, PhotosPicker, PhotosPickerItem, Transferable, PHPhotoLibrary, PHAsset, PHAsset..."
+  icon_small: "./assets/icon.svg"
+  icon_large: "./assets/icon.svg"
+  default_prompt: "Use $axiom-photo-library-ref for this Axiom workflow."

@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" role="img" aria-label="Axiom group icon">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1FA2FF"/>
+      <stop offset="50%" stop-color="#12D8FA"/>
+      <stop offset="100%" stop-color="#A6FFCB"/>
+    </linearGradient>
+  </defs>
+  <rect x="16" y="16" width="224" height="224" rx="56" fill="#0B1220"/>
+  <path d="M128 54L52 196h34l17-34h50l17 34h34L128 54zm0 66l17 34h-34l17-34z" fill="url(#g)"/>
+</svg>

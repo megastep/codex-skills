@@ -18,6 +18,10 @@ Initial paid ads skill conversions in this repo were sourced from:
 
 - [AgriciDaniel/claude-ads](https://github.com/AgriciDaniel/claude-ads)
 
+Additional Axiom skill pack conversions in this repo were sourced from:
+
+- [charleswiltgen/axiom](https://github.com/charleswiltgen/axiom)
+
 ## Migration Checklist
 
 1. Create a new skill directory in kebab-case.

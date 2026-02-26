@@ -1,0 +1,6 @@
+interface:
+  display_name: "Axiom Foundation Models Diag"
+  short_description: "Use when debugging Foundation Models issues — context exceeded, guardrail violations, slow generation, availability problems, unsupported..."
+  icon_small: "./assets/icon.svg"
+  icon_large: "./assets/icon.svg"
+  default_prompt: "Use $axiom-foundation-models-diag for this Axiom workflow."

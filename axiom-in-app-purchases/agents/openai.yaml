@@ -1,0 +1,6 @@
+interface:
+  display_name: "Axiom In App Purchases"
+  short_description: "Use when implementing in-app purchases, StoreKit 2, subscriptions, or transaction handling - testing-first workflow with .storekit config..."
+  icon_small: "./assets/icon.svg"
+  icon_large: "./assets/icon.svg"
+  default_prompt: "Use $axiom-in-app-purchases for this Axiom workflow."

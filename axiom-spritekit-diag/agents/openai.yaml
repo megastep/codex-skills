@@ -1,0 +1,6 @@
+interface:
+  display_name: "Axiom Spritekit Diag"
+  short_description: "Use when physics contacts don't fire, objects tunnel through walls, frame rate drops, touches don't register, memory spikes, coordinate c..."
+  icon_small: "./assets/icon.svg"
+  icon_large: "./assets/icon.svg"
+  default_prompt: "Use $axiom-spritekit-diag for this Axiom workflow."

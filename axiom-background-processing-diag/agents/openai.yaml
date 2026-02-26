@@ -1,0 +1,6 @@
+interface:
+  display_name: "Axiom Background Processing Diag"
+  short_description: "Symptom-based background task troubleshooting - decision trees for 'task never runs', 'task terminates early', 'works in dev not prod', '..."
+  icon_small: "./assets/icon.svg"
+  icon_large: "./assets/icon.svg"
+  default_prompt: "Use $axiom-background-processing-diag for this Axiom workflow."

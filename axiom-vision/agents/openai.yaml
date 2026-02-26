@@ -1,0 +1,6 @@
+interface:
+  display_name: "Axiom Vision"
+  short_description: "subject segmentation, VNGenerateForegroundInstanceMaskRequest, isolate object from hand, VisionKit subject lifting, image foreground dete..."
+  icon_small: "./assets/icon.svg"
+  icon_large: "./assets/icon.svg"
+  default_prompt: "Use $axiom-vision for this Axiom workflow."

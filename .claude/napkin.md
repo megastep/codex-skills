@@ -58,3 +58,8 @@
 | 2026-02-26 | self | New language skill imports require both installer group and group icon mapping to stay consistent with icon automation. | For every new group, update installer arrays, README install examples, and `assets/group-icons/{icons.json,README}` in the same change. |
 
 | 2026-02-26 | self | Used `mapfile` in installer list output; not available in this macOS Bash environment. | Keep installer Bash 3-compatible: prefer `while read` and command substitution over `mapfile`. |
+| 2026-02-26 | self | Bulk import scripting failed on first pass due nested quote parsing in `perl` one-liner. | For large shell migrations, keep substitutions in separate simple commands and validate with `rg` after each transformation. |
+
+## Patterns That Work
+- For large skill imports, derive destination names from relative `SKILL.md` paths (`/` to `-`) to avoid collisions and preserve prefixes.
+- After command-style rewrites (like `/skill` to `$`), run targeted grep checks to catch contexts inside backticks and prose.

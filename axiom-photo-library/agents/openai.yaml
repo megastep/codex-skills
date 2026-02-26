@@ -1,0 +1,6 @@
+interface:
+  display_name: "Axiom Photo Library"
+  short_description: "PHPicker, PhotosPicker, photo selection, limited library access, presentLimitedLibraryPicker, save to camera roll, PHPhotoLibrary, PHAsse..."
+  icon_small: "./assets/icon.svg"
+  icon_large: "./assets/icon.svg"
+  default_prompt: "Use $axiom-photo-library for this Axiom workflow."

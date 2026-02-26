@@ -1,0 +1,6 @@
+interface:
+  display_name: "Axiom Uikit Animation Debugging"
+  short_description: "Use when CAAnimation completion handler doesn't fire, spring physics look wrong on device, animation duration mismatches actual time, ges..."
+  icon_small: "./assets/icon.svg"
+  icon_large: "./assets/icon.svg"
+  default_prompt: "Use $axiom-uikit-animation-debugging for this Axiom workflow."

@@ -1,0 +1,6 @@
+interface:
+  display_name: "Axiom Swift Concurrency"
+  short_description: "Use when you see 'actor-isolated', 'Sendable', 'data race', '@MainActor' errors, or when asking 'why is this not thread safe', 'how do I ..."
+  icon_small: "./assets/icon.svg"
+  icon_large: "./assets/icon.svg"
+  default_prompt: "Use $axiom-swift-concurrency for this Axiom workflow."

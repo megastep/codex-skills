@@ -1,0 +1,6 @@
+interface:
+  display_name: "Axiom Core Spotlight Ref"
+  short_description: "Use when indexing app content for Spotlight search, using NSUserActivity for prediction/handoff, or choosing between CSSearchableItem and..."
+  icon_small: "./assets/icon.svg"
+  icon_large: "./assets/icon.svg"
+  default_prompt: "Use $axiom-core-spotlight-ref for this Axiom workflow."

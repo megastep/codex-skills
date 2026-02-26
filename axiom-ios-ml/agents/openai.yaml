@@ -1,0 +1,6 @@
+interface:
+  display_name: "Axiom Ios Ml"
+  short_description: "Use when deploying ANY machine learning model on-device, converting models to CoreML, compressing models, or implementing speech-to-text...."
+  icon_small: "./assets/icon.svg"
+  icon_large: "./assets/icon.svg"
+  default_prompt: "Use $axiom-ios-ml for this Axiom workflow."

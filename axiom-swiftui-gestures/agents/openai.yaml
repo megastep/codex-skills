@@ -1,0 +1,6 @@
+interface:
+  display_name: "Axiom Swiftui Gestures"
+  short_description: "Use when implementing SwiftUI gestures (tap, drag, long press, magnification, rotation), composing gestures, managing gesture state, or d..."
+  icon_small: "./assets/icon.svg"
+  icon_large: "./assets/icon.svg"
+  default_prompt: "Use $axiom-swiftui-gestures for this Axiom workflow."

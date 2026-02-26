@@ -1,0 +1,6 @@
+interface:
+  display_name: "Axiom Swiftui 26 Ref"
+  short_description: "Use when implementing iOS 26 SwiftUI features - covers Liquid Glass design system, performance improvements, @Animatable macro, 3D spatia..."
+  icon_small: "./assets/icon.svg"
+  icon_large: "./assets/icon.svg"
+  default_prompt: "Use $axiom-swiftui-26-ref for this Axiom workflow."

@@ -1,0 +1,6 @@
+interface:
+  display_name: "Axiom Storage Management Ref"
+  short_description: "Use when asking about 'purge files', 'storage pressure', 'disk space iOS', 'isExcludedFromBackup', 'URL resource values', 'volumeAvailabl..."
+  icon_small: "./assets/icon.svg"
+  icon_large: "./assets/icon.svg"
+  default_prompt: "Use $axiom-storage-management-ref for this Axiom workflow."

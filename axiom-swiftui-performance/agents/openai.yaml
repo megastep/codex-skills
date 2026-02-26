@@ -1,0 +1,6 @@
+interface:
+  display_name: "Axiom Swiftui Performance"
+  short_description: "Use when UI is slow, scrolling lags, animations stutter, or when asking 'why is my SwiftUI view slow', 'how do I optimize List performanc..."
+  icon_small: "./assets/icon.svg"
+  icon_large: "./assets/icon.svg"
+  default_prompt: "Use $axiom-swiftui-performance for this Axiom workflow."

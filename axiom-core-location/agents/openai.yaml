@@ -1,0 +1,6 @@
+interface:
+  display_name: "Axiom Core Location"
+  short_description: "Use for Core Location implementation patterns - authorization strategy, monitoring strategy, accuracy selection, background location"
+  icon_small: "./assets/icon.svg"
+  icon_large: "./assets/icon.svg"
+  default_prompt: "Use $axiom-core-location for this Axiom workflow."

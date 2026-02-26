@@ -1,0 +1,6 @@
+interface:
+  display_name: "Axiom App Intents Ref"
+  short_description: "Use when integrating App Intents for Siri, Apple Intelligence, Shortcuts, Spotlight, or system experiences - covers AppIntent, AppEntity,..."
+  icon_small: "./assets/icon.svg"
+  icon_large: "./assets/icon.svg"
+  default_prompt: "Use $axiom-app-intents-ref for this Axiom workflow."

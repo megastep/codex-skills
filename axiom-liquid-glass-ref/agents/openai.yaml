@@ -1,0 +1,6 @@
+interface:
+  display_name: "Axiom Liquid Glass Ref"
+  short_description: "Use when planning comprehensive Liquid Glass adoption across an app, auditing existing interfaces for Liquid Glass compatibility, impleme..."
+  icon_small: "./assets/icon.svg"
+  icon_large: "./assets/icon.svg"
+  default_prompt: "Use $axiom-liquid-glass-ref for this Axiom workflow."

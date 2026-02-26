@@ -1,0 +1,6 @@
+interface:
+  display_name: "Axiom Extensions Widgets"
+  short_description: "Use when implementing widgets, Live Activities, or Control Center controls - enforces correct patterns for timeline management, data shar..."
+  icon_small: "./assets/icon.svg"
+  icon_large: "./assets/icon.svg"
+  default_prompt: "Use $axiom-extensions-widgets for this Axiom workflow."

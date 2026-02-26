@@ -1,0 +1,6 @@
+interface:
+  display_name: "Axiom Swiftui Debugging Diag"
+  short_description: "Use when SwiftUI view debugging requires systematic investigation - view updates not working after basic troubleshooting, intermittent UI..."
+  icon_small: "./assets/icon.svg"
+  icon_large: "./assets/icon.svg"
+  default_prompt: "Use $axiom-swiftui-debugging-diag for this Axiom workflow."

@@ -1,0 +1,6 @@
+interface:
+  display_name: "Axiom Swiftui Debugging"
+  short_description: "Use when debugging SwiftUI view updates, preview crashes, or layout issues - diagnostic decision trees to identify root causes quickly an..."
+  icon_small: "./assets/icon.svg"
+  icon_large: "./assets/icon.svg"
+  default_prompt: "Use $axiom-swiftui-debugging for this Axiom workflow."

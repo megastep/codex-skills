@@ -1,0 +1,6 @@
+interface:
+  display_name: "Axiom Lldb Ref"
+  short_description: "Complete LLDB command reference — variable inspection, breakpoints, threads, expression evaluation, process control, memory commands, and..."
+  icon_small: "./assets/icon.svg"
+  icon_large: "./assets/icon.svg"
+  default_prompt: "Use $axiom-lldb-ref for this Axiom workflow."

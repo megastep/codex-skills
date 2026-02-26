@@ -1,0 +1,6 @@
+interface:
+  display_name: "Axiom Sqlitedata"
+  short_description: "SQLiteData queries, @Table models, Point-Free SQLite, RETURNING clause, FTS5 full-text search, CloudKit sync, CTEs, JSON aggregation, @Da..."
+  icon_small: "./assets/icon.svg"
+  icon_large: "./assets/icon.svg"
+  default_prompt: "Use $axiom-sqlitedata for this Axiom workflow."

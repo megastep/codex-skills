@@ -1,0 +1,6 @@
+interface:
+  display_name: "Axiom Tvos"
+  short_description: "Use when building ANY tvOS app - covers Focus Engine, Siri Remote input, storage constraints (no Document directory), no WebView, TVUIKit..."
+  icon_small: "./assets/icon.svg"
+  icon_large: "./assets/icon.svg"
+  default_prompt: "Use $axiom-tvos for this Axiom workflow."

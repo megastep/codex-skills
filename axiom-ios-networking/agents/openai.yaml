@@ -1,0 +1,6 @@
+interface:
+  display_name: "Axiom Ios Networking"
+  short_description: "Use when implementing or debugging ANY network connection, API call, or socket. Covers URLSession, Network.framework, NetworkConnection, ..."
+  icon_small: "./assets/icon.svg"
+  icon_large: "./assets/icon.svg"
+  default_prompt: "Use $axiom-ios-networking for this Axiom workflow."

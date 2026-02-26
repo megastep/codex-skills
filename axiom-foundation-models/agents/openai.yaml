@@ -1,0 +1,6 @@
+interface:
+  display_name: "Axiom Foundation Models"
+  short_description: "Use when implementing on-device AI with Apple's Foundation Models framework — prevents context overflow, blocking UI, wrong model use cas..."
+  icon_small: "./assets/icon.svg"
+  icon_large: "./assets/icon.svg"
+  default_prompt: "Use $axiom-foundation-models for this Axiom workflow."

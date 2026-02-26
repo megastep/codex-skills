@@ -1,0 +1,6 @@
+interface:
+  display_name: "Axiom Localization"
+  short_description: "Use when localizing apps, using String Catalogs, generating type-safe symbols (Xcode 26+), handling plurals, RTL layouts, locale-aware fo..."
+  icon_small: "./assets/icon.svg"
+  icon_large: "./assets/icon.svg"
+  default_prompt: "Use $axiom-localization for this Axiom workflow."

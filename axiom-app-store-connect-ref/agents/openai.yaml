@@ -1,0 +1,6 @@
+interface:
+  display_name: "Axiom App Store Connect Ref"
+  short_description: "Reference for App Store Connect crash analysis, TestFlight feedback, metrics dashboards, and data export workflows"
+  icon_small: "./assets/icon.svg"
+  icon_large: "./assets/icon.svg"
+  default_prompt: "Use $axiom-app-store-connect-ref for this Axiom workflow."

@@ -1,0 +1,6 @@
+interface:
+  display_name: "Axiom Core Data"
+  short_description: "Use when choosing Core Data vs SwiftData, setting up the Core Data stack, modeling relationships, or implementing concurrency patterns - ..."
+  icon_small: "./assets/icon.svg"
+  icon_large: "./assets/icon.svg"
+  default_prompt: "Use $axiom-core-data for this Axiom workflow."

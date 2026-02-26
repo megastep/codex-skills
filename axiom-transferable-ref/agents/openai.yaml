@@ -1,0 +1,6 @@
+interface:
+  display_name: "Axiom Transferable Ref"
+  short_description: "Use when implementing drag and drop, copy/paste, ShareLink, or ANY content sharing between apps or views - covers Transferable protocol, ..."
+  icon_small: "./assets/icon.svg"
+  icon_large: "./assets/icon.svg"
+  default_prompt: "Use $axiom-transferable-ref for this Axiom workflow."

@@ -19,6 +19,7 @@ Reusable SVG icons for skill groups.
 - `prompt.svg`
 - `test.svg`
 - `feature.svg`
+- `axiom.svg`
 
 The icon-name mapping is in `icons.json`.
 

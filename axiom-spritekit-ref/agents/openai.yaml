@@ -1,0 +1,6 @@
+interface:
+  display_name: "Axiom Spritekit Ref"
+  short_description: "SpriteKit API reference — all node types, physics body creation, action catalog, texture atlases, constraints, scene setup, particles, SK..."
+  icon_small: "./assets/icon.svg"
+  icon_large: "./assets/icon.svg"
+  default_prompt: "Use $axiom-spritekit-ref for this Axiom workflow."

@@ -1,0 +1,6 @@
+interface:
+  display_name: "Axiom Ios Concurrency"
+  short_description: "Use when writing ANY code with async, actors, threads, or seeing ANY concurrency error. Covers Swift 6 concurrency, @MainActor, Sendable,..."
+  icon_small: "./assets/icon.svg"
+  icon_large: "./assets/icon.svg"
+  default_prompt: "Use $axiom-ios-concurrency for this Axiom workflow."

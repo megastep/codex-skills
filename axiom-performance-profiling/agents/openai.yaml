@@ -1,0 +1,6 @@
+interface:
+  display_name: "Axiom Performance Profiling"
+  short_description: "Use when app feels slow, memory grows over time, battery drains fast, or you want to profile proactively - decision trees to choose the r..."
+  icon_small: "./assets/icon.svg"
+  icon_large: "./assets/icon.svg"
+  default_prompt: "Use $axiom-performance-profiling for this Axiom workflow."

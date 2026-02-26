@@ -1,0 +1,6 @@
+interface:
+  display_name: "Axiom Lldb"
+  short_description: "Use when ANY runtime debugging is needed — setting breakpoints, inspecting variables, evaluating expressions, analyzing threads, or repro..."
+  icon_small: "./assets/icon.svg"
+  icon_large: "./assets/icon.svg"
+  default_prompt: "Use $axiom-lldb for this Axiom workflow."

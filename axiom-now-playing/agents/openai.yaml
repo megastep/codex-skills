@@ -1,0 +1,6 @@
+interface:
+  display_name: "Axiom Now Playing"
+  short_description: "Use when Now Playing metadata doesn't appear on Lock Screen/Control Center, remote commands (play/pause/skip) don't respond, artwork is m..."
+  icon_small: "./assets/icon.svg"
+  icon_large: "./assets/icon.svg"
+  default_prompt: "Use $axiom-now-playing for this Axiom workflow."

@@ -1,0 +1,6 @@
+interface:
+  display_name: "Axiom Scenekit Ref"
+  short_description: "SceneKit → RealityKit concept mapping, complete API cross-reference for migration, scene graph API, materials, lighting, camera, physics,..."
+  icon_small: "./assets/icon.svg"
+  icon_large: "./assets/icon.svg"
+  default_prompt: "Use $axiom-scenekit-ref for this Axiom workflow."

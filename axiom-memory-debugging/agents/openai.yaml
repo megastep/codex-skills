@@ -1,0 +1,6 @@
+interface:
+  display_name: "Axiom Memory Debugging"
+  short_description: "Use when you see memory warnings, 'retain cycle', app crashes from memory pressure, or when asking 'why is my app using so much memory', ..."
+  icon_small: "./assets/icon.svg"
+  icon_large: "./assets/icon.svg"
+  default_prompt: "Use $axiom-memory-debugging for this Axiom workflow."

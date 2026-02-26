@@ -1,0 +1,6 @@
+interface:
+  display_name: "Axiom Xctrace Ref"
+  short_description: "Use when automating Instruments profiling, running headless performance analysis, or integrating profiling into CI/CD - comprehensive xct..."
+  icon_small: "./assets/icon.svg"
+  icon_large: "./assets/icon.svg"
+  default_prompt: "Use $axiom-xctrace-ref for this Axiom workflow."

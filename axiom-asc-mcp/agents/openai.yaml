@@ -1,0 +1,6 @@
+interface:
+  display_name: "Axiom Asc Mcp"
+  short_description: "Use when automating App Store Connect via MCP — submit builds, manage TestFlight, respond to reviews, triage feedback programmatically"
+  icon_small: "./assets/icon.svg"
+  icon_large: "./assets/icon.svg"
+  default_prompt: "Use $axiom-asc-mcp for this Axiom workflow."

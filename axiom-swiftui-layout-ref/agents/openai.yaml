@@ -1,0 +1,6 @@
+interface:
+  display_name: "Axiom Swiftui Layout Ref"
+  short_description: "Reference — Complete SwiftUI adaptive layout API guide covering ViewThatFits, AnyLayout, Layout protocol, onGeometryChange, GeometryReade..."
+  icon_small: "./assets/icon.svg"
+  icon_large: "./assets/icon.svg"
+  default_prompt: "Use $axiom-swiftui-layout-ref for this Axiom workflow."

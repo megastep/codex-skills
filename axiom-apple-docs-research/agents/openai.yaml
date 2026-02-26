@@ -1,0 +1,6 @@
+interface:
+  display_name: "Axiom Apple Docs Research"
+  short_description: "Use when researching Apple frameworks, APIs, or WWDC sessions - provides techniques for retrieving full transcripts, code samples, and do..."
+  icon_small: "./assets/icon.svg"
+  icon_large: "./assets/icon.svg"
+  default_prompt: "Use $axiom-apple-docs-research for this Axiom workflow."

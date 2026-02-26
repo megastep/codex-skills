@@ -1,0 +1,6 @@
+interface:
+  display_name: "Axiom Swiftui Layout"
+  short_description: "Use when layouts need to adapt to different screen sizes, iPad multitasking, or iOS 26 free-form windows — decision trees for ViewThatFit..."
+  icon_small: "./assets/icon.svg"
+  icon_large: "./assets/icon.svg"
+  default_prompt: "Use $axiom-swiftui-layout for this Axiom workflow."

@@ -1,0 +1,6 @@
+interface:
+  display_name: "Axiom Icloud Drive Ref"
+  short_description: "Use when implementing 'iCloud Drive', 'ubiquitous container', 'file sync', 'NSFileCoordinator', 'NSFilePresenter', 'isUbiquitousItem', 'N..."
+  icon_small: "./assets/icon.svg"
+  icon_large: "./assets/icon.svg"
+  default_prompt: "Use $axiom-icloud-drive-ref for this Axiom workflow."

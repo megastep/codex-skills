@@ -1,0 +1,6 @@
+interface:
+  display_name: "Axiom Testflight Triage"
+  short_description: "Use when ANY beta tester reports a crash, ANY crash appears in Organizer or App Store Connect, crash logs need symbolication, app was kil..."
+  icon_small: "./assets/icon.svg"
+  icon_large: "./assets/icon.svg"
+  default_prompt: "Use $axiom-testflight-triage for this Axiom workflow."

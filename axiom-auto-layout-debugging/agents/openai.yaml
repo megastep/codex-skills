@@ -1,0 +1,6 @@
+interface:
+  display_name: "Axiom Auto Layout Debugging"
+  short_description: "Use when encountering Unable to simultaneously satisfy constraints errors, constraint conflicts, ambiguous layout warnings, or views posi..."
+  icon_small: "./assets/icon.svg"
+  icon_large: "./assets/icon.svg"
+  default_prompt: "Use $axiom-auto-layout-debugging for this Axiom workflow."

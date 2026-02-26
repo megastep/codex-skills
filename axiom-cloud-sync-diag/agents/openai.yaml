@@ -1,0 +1,6 @@
+interface:
+  display_name: "Axiom Cloud Sync Diag"
+  short_description: "Use when debugging 'file not syncing', 'CloudKit error', 'sync conflict', 'iCloud upload failed', 'ubiquitous item error', 'data not appe..."
+  icon_small: "./assets/icon.svg"
+  icon_large: "./assets/icon.svg"
+  default_prompt: "Use $axiom-cloud-sync-diag for this Axiom workflow."

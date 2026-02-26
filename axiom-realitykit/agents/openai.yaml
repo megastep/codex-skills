@@ -1,0 +1,6 @@
+interface:
+  display_name: "Axiom Realitykit"
+  short_description: "Use when building 3D content, AR experiences, or spatial computing with RealityKit. Covers ECS architecture, SwiftUI integration, Reality..."
+  icon_small: "./assets/icon.svg"
+  icon_large: "./assets/icon.svg"
+  default_prompt: "Use $axiom-realitykit for this Axiom workflow."

@@ -1,0 +1,6 @@
+interface:
+  display_name: "Axiom App Store Diag"
+  short_description: "Use when app is rejected by App Review, submission blocked, or appeal needed - systematic diagnosis from rejection message to fix with gu..."
+  icon_small: "./assets/icon.svg"
+  icon_large: "./assets/icon.svg"
+  default_prompt: "Use $axiom-app-store-diag for this Axiom workflow."

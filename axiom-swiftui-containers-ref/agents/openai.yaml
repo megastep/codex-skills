@@ -1,0 +1,6 @@
+interface:
+  display_name: "Axiom Swiftui Containers Ref"
+  short_description: "Reference — SwiftUI stacks, grids, outlines, and scroll enhancements through iOS 26"
+  icon_small: "./assets/icon.svg"
+  icon_large: "./assets/icon.svg"
+  default_prompt: "Use $axiom-swiftui-containers-ref for this Axiom workflow."

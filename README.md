@@ -1,6 +1,6 @@
 # codex-skills
 
-Codex-format skills for SEO, blog, paid ads, DevOps, full-stack implementation, feature specification, database performance, Kotlin, Swift, TypeScript, Vue, React, prompt engineering, testing, and documentation workflows, converted from Claude-style skills and organized for easy reuse.
+Codex-format skills for SEO, blog, paid ads, DevOps, full-stack implementation, feature specification, database performance, Kotlin, Swift, TypeScript, Vue, React, prompt engineering, testing, documentation workflows, and a large Axiom iOS engineering pack, converted from Claude-style skills and organized for easy reuse.
 
 ## What Is In This Repo
 
@@ -23,6 +23,7 @@ Codex-format skills for SEO, blog, paid ads, DevOps, full-stack implementation, 
 - `prompt-engineer/`: LLM prompt design, optimization, and evaluation skill
 - `test-master/`: Comprehensive test strategy and implementation skill
 - `feature-forge/`: Feature discovery and specification skill
+- `axiom-*`: Axiom iOS/macOS skill pack (`158` prefixed skills; diagnostics, references, routers, and workflows)
 - `docs/`: Contributor and migration documentation
 
 ## Current Skill Set
@@ -110,6 +111,16 @@ test/
 
 feature/
 └── feature-forge
+
+axiom/
+├── axiom-* (158 skills)
+├── examples:
+│   ├── axiom-ios-ui
+│   ├── axiom-swift-concurrency
+│   ├── axiom-shipping
+│   ├── axiom-xcode-debugging
+│   └── axiom-ios-ml-coreml
+└── install with `--group axiom`
 ```
 
 ## Repository Layout
@@ -197,10 +208,14 @@ feature/
 │   ├── SKILL.md
 │   ├── agents/openai.yaml
 │   └── references/
-└── feature-forge/
+├── feature-forge/
+│   ├── SKILL.md
+│   ├── agents/openai.yaml
+│   └── references/
+└── axiom-*/
     ├── SKILL.md
     ├── agents/openai.yaml
-    └── references/
+    └── assets/icon.svg
 ```
 
 ## Quick Start
@@ -256,6 +271,7 @@ Use the bundled installer to copy skills from this repo into your local Codex sk
 ./install-skills.sh --group prompt
 ./install-skills.sh --group test
 ./install-skills.sh --group feature
+./install-skills.sh --group axiom
 
 # install specific skills
 ./install-skills.sh --skill seo --skill ads-google
@@ -278,7 +294,7 @@ Then restart Codex to pick up installed skills.
 
 ## Status
 
-This is an early scaffolded repo with a complete first batch of SEO skills and contributor docs in place.
+This repo now includes SEO, blog, ads, expert/dev workflows, and the imported Axiom pack with consistent installer and metadata wiring.
 
 ## Attribution
 
@@ -345,3 +361,7 @@ The Test Master skill in this repository was originally sourced from:
 The Feature Forge skill in this repository was originally sourced from:
 
 - [Jeffallan/claude-skills](https://github.com/Jeffallan/claude-skills/tree/main/skills/feature-forge)
+
+The Axiom skill pack in this repository was originally sourced from:
+
+- [charleswiltgen/axiom](https://github.com/charleswiltgen/axiom)

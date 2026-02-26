@@ -1,0 +1,6 @@
+interface:
+  display_name: "Axiom Swiftdata Migration Diag"
+  short_description: "Use when SwiftData migrations crash, fail to preserve relationships, lose data, or work in simulator but fail on device - systematic diag..."
+  icon_small: "./assets/icon.svg"
+  icon_large: "./assets/icon.svg"
+  default_prompt: "Use $axiom-swiftdata-migration-diag for this Axiom workflow."

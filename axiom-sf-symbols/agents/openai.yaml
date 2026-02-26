@@ -1,0 +1,6 @@
+interface:
+  display_name: "Axiom Sf Symbols"
+  short_description: "Use when implementing SF Symbols rendering modes, symbol effects, animations, custom symbols, or troubleshooting symbol appearance - cove..."
+  icon_small: "./assets/icon.svg"
+  icon_large: "./assets/icon.svg"
+  default_prompt: "Use $axiom-sf-symbols for this Axiom workflow."

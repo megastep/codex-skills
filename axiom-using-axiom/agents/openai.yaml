@@ -1,0 +1,6 @@
+interface:
+  display_name: "Axiom Using Axiom"
+  short_description: "Use when starting any iOS/Swift conversation - establishes how to find and use Axiom skills, requiring Skill tool invocation before ANY r..."
+  icon_small: "./assets/icon.svg"
+  icon_large: "./assets/icon.svg"
+  default_prompt: "Use $axiom-using-axiom for this Axiom workflow."

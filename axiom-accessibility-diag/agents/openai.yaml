@@ -1,0 +1,6 @@
+interface:
+  display_name: "Axiom Accessibility Diag"
+  short_description: "Use when fixing VoiceOver issues, Dynamic Type violations, color contrast failures, touch target problems, keyboard navigation gaps, or R..."
+  icon_small: "./assets/icon.svg"
+  icon_large: "./assets/icon.svg"
+  default_prompt: "Use $axiom-accessibility-diag for this Axiom workflow."

@@ -1,0 +1,6 @@
+interface:
+  display_name: "Axiom Ios Data"
+  short_description: "Use when working with ANY data persistence, database, axiom-storage, CloudKit, migration, or serialization. Covers SwiftData, Core Data, ..."
+  icon_small: "./assets/icon.svg"
+  icon_large: "./assets/icon.svg"
+  default_prompt: "Use $axiom-ios-data for this Axiom workflow."

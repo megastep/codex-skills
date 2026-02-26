@@ -1,0 +1,6 @@
+interface:
+  display_name: "Axiom Sqlitedata Ref"
+  short_description: "SQLiteData advanced patterns, @Selection column groups, single-table inheritance, recursive CTEs, database views, custom aggregates, Tabl..."
+  icon_small: "./assets/icon.svg"
+  icon_large: "./assets/icon.svg"
+  default_prompt: "Use $axiom-sqlitedata-ref for this Axiom workflow."

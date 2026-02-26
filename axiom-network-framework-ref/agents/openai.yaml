@@ -1,0 +1,6 @@
+interface:
+  display_name: "Axiom Network Framework Ref"
+  short_description: "Reference — Comprehensive Network.framework guide covering NetworkConnection (iOS 26+), NWConnection (iOS 12-25), TLV framing, Coder prot..."
+  icon_small: "./assets/icon.svg"
+  icon_large: "./assets/icon.svg"
+  default_prompt: "Use $axiom-network-framework-ref for this Axiom workflow."

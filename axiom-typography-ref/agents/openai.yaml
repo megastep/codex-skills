@@ -1,0 +1,6 @@
+interface:
+  display_name: "Axiom Typography Ref"
+  short_description: "Apple platform typography reference (San Francisco fonts, text styles, Dynamic Type, tracking, leading, internationalization) through iOS 26"
+  icon_small: "./assets/icon.svg"
+  icon_large: "./assets/icon.svg"
+  default_prompt: "Use $axiom-typography-ref for this Axiom workflow."

@@ -1,0 +1,6 @@
+interface:
+  display_name: "Axiom Privacy Ux"
+  short_description: "Use when implementing privacy manifests, requesting permissions, App Tracking Transparency UX, or preparing Privacy Nutrition Labels - co..."
+  icon_small: "./assets/icon.svg"
+  icon_large: "./assets/icon.svg"
+  default_prompt: "Use $axiom-privacy-ux for this Axiom workflow."

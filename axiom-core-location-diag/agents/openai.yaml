@@ -1,0 +1,6 @@
+interface:
+  display_name: "Axiom Core Location Diag"
+  short_description: "Use for Core Location troubleshooting - no location updates, background location broken, authorization denied, geofence not triggering"
+  icon_small: "./assets/icon.svg"
+  icon_large: "./assets/icon.svg"
+  default_prompt: "Use $axiom-core-location-diag for this Axiom workflow."

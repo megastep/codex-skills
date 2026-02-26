@@ -1,0 +1,6 @@
+interface:
+  display_name: "Axiom Xcode Debugging"
+  short_description: "Use when encountering BUILD FAILED, test crashes, simulator hangs, stale builds, zombie xcodebuild processes, Unable to boot simulator, N..."
+  icon_small: "./assets/icon.svg"
+  icon_large: "./assets/icon.svg"
+  default_prompt: "Use $axiom-xcode-debugging for this Axiom workflow."

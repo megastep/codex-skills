@@ -1,0 +1,6 @@
+interface:
+  display_name: "Axiom Scenekit"
+  short_description: "Use when working with SceneKit 3D scenes, migrating SceneKit to RealityKit, or maintaining legacy SceneKit code. Covers scene graph, mate..."
+  icon_small: "./assets/icon.svg"
+  icon_large: "./assets/icon.svg"
+  default_prompt: "Use $axiom-scenekit for this Axiom workflow."

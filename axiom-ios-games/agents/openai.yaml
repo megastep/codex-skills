@@ -1,0 +1,6 @@
+interface:
+  display_name: "Axiom Ios Games"
+  short_description: "Use when building ANY 2D or 3D game, game prototype, or interactive simulation with SpriteKit, SceneKit, or RealityKit. Covers scene grap..."
+  icon_small: "./assets/icon.svg"
+  icon_large: "./assets/icon.svg"
+  default_prompt: "Use $axiom-ios-games for this Axiom workflow."

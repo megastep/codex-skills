@@ -1,0 +1,6 @@
+interface:
+  display_name: "Axiom Xcode Mcp Ref"
+  short_description: "Reference — all 20 Xcode MCP tools with parameters, return schemas, and examples"
+  icon_small: "./assets/icon.svg"
+  icon_large: "./assets/icon.svg"
+  default_prompt: "Use $axiom-xcode-mcp-ref for this Axiom workflow."

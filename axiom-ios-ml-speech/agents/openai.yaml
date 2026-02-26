@@ -1,0 +1,6 @@
+interface:
+  display_name: "Axiom Ios Ml Speech"
+  short_description: "Use when implementing speech-to-text, live transcription, or audio transcription. Covers SpeechAnalyzer (iOS 26+), SpeechTranscriber, vol..."
+  icon_small: "./assets/icon.svg"
+  icon_large: "./assets/icon.svg"
+  default_prompt: "Use $axiom-ios-ml-speech for this Axiom workflow."

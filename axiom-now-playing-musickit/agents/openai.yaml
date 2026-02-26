@@ -1,0 +1,6 @@
+interface:
+  display_name: "Axiom Now Playing Musickit"
+  short_description: "MusicKit Now Playing integration patterns. Use when playing Apple Music content with ApplicationMusicPlayer and understanding automatic v..."
+  icon_small: "./assets/icon.svg"
+  icon_large: "./assets/icon.svg"
+  default_prompt: "Use $axiom-now-playing-musickit for this Axiom workflow."

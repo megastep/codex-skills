@@ -1,0 +1,6 @@
+interface:
+  display_name: "Axiom Build Performance"
+  short_description: "Use when build times are slow, investigating build performance, analyzing Build Timeline, identifying type checking bottlenecks, enabling..."
+  icon_small: "./assets/icon.svg"
+  icon_large: "./assets/icon.svg"
+  default_prompt: "Use $axiom-build-performance for this Axiom workflow."

@@ -1,0 +1,6 @@
+interface:
+  display_name: "Axiom Swiftui Architecture"
+  short_description: "Use when separating logic from SwiftUI views, choosing architecture patterns, refactoring view files, or asking 'where should this code g..."
+  icon_small: "./assets/icon.svg"
+  icon_large: "./assets/icon.svg"
+  default_prompt: "Use $axiom-swiftui-architecture for this Axiom workflow."

@@ -1,0 +1,6 @@
+interface:
+  display_name: "Axiom Storage Diag"
+  short_description: "Use when debugging 'files disappeared', 'data missing after restart', 'backup too large', 'can't save file', 'file not found', 'storage f..."
+  icon_small: "./assets/icon.svg"
+  icon_large: "./assets/icon.svg"
+  default_prompt: "Use $axiom-storage-diag for this Axiom workflow."
