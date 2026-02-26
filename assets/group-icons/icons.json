@@ -6,6 +6,7 @@
   "fullstack": "codesandbox",
   "database": "chart-network",
   "kotlin": "braces",
+  "swift": "app-window-mac",
   "typescript": "code-xml",
   "code": "code",
   "vue": "component",

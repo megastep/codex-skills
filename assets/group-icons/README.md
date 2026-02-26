@@ -11,6 +11,7 @@ Reusable SVG icons for skill groups.
 - `fullstack.svg`
 - `database.svg`
 - `kotlin.svg`
+- `swift.svg`
 - `typescript.svg`
 - `code.svg`
 - `vue.svg`

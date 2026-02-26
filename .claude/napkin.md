@@ -54,3 +54,7 @@
 | 2026-02-26 | self | Assumed Lucide icon filenames without validating current catalog; initial downloads had 404s. | Query icon catalog first, then pin verified names in a mapping manifest before batch fetch. |
 
 | 2026-02-26 | self | New skill imports with new prefixes need explicit installer group mapping to stay discoverable by cohort. | Add/update installer group + dry-run validation (`--group <prefix>`) for every new top-level prefix skill. |
+
+| 2026-02-26 | self | New language skill imports require both installer group and group icon mapping to stay consistent with icon automation. | For every new group, update installer arrays, README install examples, and `assets/group-icons/{icons.json,README}` in the same change. |
+
+| 2026-02-26 | self | Used `mapfile` in installer list output; not available in this macOS Bash environment. | Keep installer Bash 3-compatible: prefer `while read` and command substitution over `mapfile`. |

@@ -1,6 +1,6 @@
 # codex-skills
 
-Codex-format skills for SEO, blog, paid ads, DevOps, full-stack implementation, feature specification, database performance, Kotlin, TypeScript, Vue, React, prompt engineering, testing, and documentation workflows, converted from Claude-style skills and organized for easy reuse.
+Codex-format skills for SEO, blog, paid ads, DevOps, full-stack implementation, feature specification, database performance, Kotlin, Swift, TypeScript, Vue, React, prompt engineering, testing, and documentation workflows, converted from Claude-style skills and organized for easy reuse.
 
 ## What Is In This Repo
 
@@ -14,6 +14,7 @@ Codex-format skills for SEO, blog, paid ads, DevOps, full-stack implementation, 
 - `fullstack-guardian/`: End-to-end feature implementation skill across frontend, backend, and security
 - `database-optimizer/`: Database performance analysis and optimization skill
 - `kotlin-specialist/`: Kotlin/KMP/Compose/Ktor implementation skill
+- `swift-expert/`: Swift/SwiftUI implementation and concurrency skill
 - `typescript-pro/`: Advanced TypeScript type-system and tooling skill
 - `code-documenter/`: Code and API documentation generation skill
 - `code-reviewer/`: Structured code review and quality audit skill
@@ -84,6 +85,9 @@ database/
 
 kotlin/
 └── kotlin-specialist
+
+swift/
+└── swift-expert
 
 typescript/
 └── typescript-pro
@@ -161,6 +165,10 @@ feature/
 │   ├── SKILL.md
 │   ├── agents/openai.yaml
 │   └── references/
+├── swift-expert/
+│   ├── SKILL.md
+│   ├── agents/openai.yaml
+│   └── references/
 ├── typescript-pro/
 │   ├── SKILL.md
 │   ├── agents/openai.yaml
@@ -234,6 +242,7 @@ Use the bundled installer to copy skills from this repo into your local Codex sk
 ./install-skills.sh --group fullstack
 ./install-skills.sh --group database
 ./install-skills.sh --group kotlin
+./install-skills.sh --group swift
 ./install-skills.sh --group typescript
 ./install-skills.sh --group code
 ./install-skills.sh --group vue
@@ -294,6 +303,10 @@ The Database Optimizer skill in this repository was originally sourced from:
 The Kotlin Specialist skill in this repository was originally sourced from:
 
 - [Jeffallan/claude-skills](https://github.com/Jeffallan/claude-skills/tree/main/skills/kotlin-specialist)
+
+The Swift Expert skill in this repository was originally sourced from:
+
+- [Jeffallan/claude-skills](https://github.com/Jeffallan/claude-skills/tree/main/skills/swift-expert)
 
 The TypeScript Pro skill in this repository was originally sourced from:
 

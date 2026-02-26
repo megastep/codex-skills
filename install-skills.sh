@@ -18,6 +18,13 @@ declare -a SKILLS=()
 declare -a AVAILABLE_SKILLS=()
 
 declare -a SKILL_GROUPS=(
+  "experts"
+  "quality"
+  "planning"
+  "platform"
+  "marketing"
+  "frontend"
+  "languages"
   "seo"
   "ads"
   "blog"
@@ -32,23 +39,7 @@ declare -a SKILL_GROUPS=(
   "prompt"
   "test"
   "feature"
-)
-
-declare -a GROUP_PREFIXES=(
-  "seo"
-  "ads"
-  "blog"
-  "devops"
-  "fullstack"
-  "database"
-  "kotlin"
-  "typescript"
-  "code"
-  "vue"
-  "react"
-  "prompt"
-  "test"
-  "feature"
+  "swift"
 )
 
 load_available_skills() {
@@ -71,16 +62,25 @@ group_names_csv() {
   echo "${SKILL_GROUPS[*]}"
 }
 
-group_prefix_for() {
-  local group="$1"
-  local i
-  for i in "${!SKILL_GROUPS[@]}"; do
-    if [[ "${SKILL_GROUPS[$i]}" == "$group" ]]; then
-      echo "${GROUP_PREFIXES[$i]}"
-      return 0
+emit_if_available() {
+  local target="$1"
+  local skill
+  for skill in "${AVAILABLE_SKILLS[@]}"; do
+    if [[ "$skill" == "$target" ]]; then
+      echo "$skill"
+      return
     fi
   done
-  return 1
+}
+
+collect_by_prefix() {
+  local prefix="$1"
+  local skill
+  for skill in "${AVAILABLE_SKILLS[@]}"; do
+    if [[ "$skill" == "$prefix" || "$skill" == "$prefix"-* ]]; then
+      echo "$skill"
+    fi
+  done
 }
 
 print_usage() {
@@ -115,33 +115,71 @@ USAGE
 }
 
 print_list() {
-  echo "Groups:"
   local group
-  for group in "${SKILL_GROUPS[@]}"; do
-    echo "  - $group"
-  done
-  echo
-  echo "Skills:"
   local skill
-  for skill in "${AVAILABLE_SKILLS[@]}"; do
-    echo "  - $skill"
+  local group_skills_text
+
+  echo "Groups and skills:"
+  for group in "${SKILL_GROUPS[@]}"; do
+    echo "$group:"
+    group_skills_text="$(collect_group_skills "$group")"
+    if [[ -z "$group_skills_text" ]]; then
+      echo "  (none)"
+      continue
+    fi
+    while IFS= read -r skill; do
+      [[ -n "$skill" ]] || continue
+      echo "  - $skill"
+    done <<< "$group_skills_text"
   done
 }
 
 collect_group_skills() {
   local group="$1"
-  local prefix
-  local skill
-  prefix="$(group_prefix_for "$group")" || {
-    echo "Error: unknown group '$group' (valid: $(group_names_csv))" >&2
-    exit 1
-  }
-
-  for skill in "${AVAILABLE_SKILLS[@]}"; do
-    if [[ "$skill" == "$prefix" || "$skill" == "$prefix"-* ]]; then
-      echo "$skill"
-    fi
-  done
+  case "$group" in
+    experts)
+      emit_if_available "react-expert"
+      emit_if_available "vue-expert"
+      emit_if_available "swift-expert"
+      emit_if_available "kotlin-specialist"
+      emit_if_available "typescript-pro"
+      emit_if_available "prompt-engineer"
+      ;;
+    quality)
+      emit_if_available "code-reviewer"
+      emit_if_available "code-documenter"
+      emit_if_available "test-master"
+      ;;
+    planning)
+      emit_if_available "feature-forge"
+      emit_if_available "fullstack-guardian"
+      ;;
+    platform)
+      emit_if_available "devops-engineer"
+      emit_if_available "database-optimizer"
+      ;;
+    marketing)
+      collect_by_prefix "seo"
+      collect_by_prefix "ads"
+      collect_by_prefix "blog"
+      ;;
+    frontend)
+      emit_if_available "react-expert"
+      emit_if_available "vue-expert"
+      ;;
+    languages)
+      emit_if_available "kotlin-specialist"
+      emit_if_available "swift-expert"
+      emit_if_available "typescript-pro"
+      ;;
+    seo|ads|blog|devops|fullstack|database|kotlin|typescript|code|vue|react|prompt|test|feature|swift)
+      collect_by_prefix "$group"
+      ;;
+    *)
+      echo "Error: unknown group '$group' (valid: $(group_names_csv))" >&2
+      exit 1
+      ;;
+  esac
 }
 
 install_one() {
