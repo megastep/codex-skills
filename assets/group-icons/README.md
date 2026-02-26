@@ -18,6 +18,7 @@ Reusable SVG icons for skill groups.
 - `react.svg`
 - `prompt.svg`
 - `test.svg`
+- `feature.svg`
 
 The icon-name mapping is in `icons.json`.
 
@@ -33,7 +34,7 @@ For production use, copy the icon into each skill's local `assets/` folder and s
 
 ## Source and License
 
-Icons are from Lucide:
+Icons are from OpenMoji (color SVG set):
 
-- Source: https://github.com/lucide-icons/lucide/tree/main/icons
-- License: ISC (https://github.com/lucide-icons/lucide/blob/main/LICENSE)
+- Source: https://github.com/hfg-gmuend/openmoji/tree/master/color/svg
+- License: CC BY-SA 4.0 (https://github.com/hfg-gmuend/openmoji/blob/master/LICENSE.txt)
