@@ -1,0 +1,6 @@
+interface:
+  display_name: "Feature Forge"
+  short_description: "Feature discovery, requirements, and specification guidance"
+  icon_small: "./assets/icon.svg"
+  icon_large: "./assets/icon.svg"
+  default_prompt: "Use $feature-forge to run structured feature discovery and produce a complete, testable specification."

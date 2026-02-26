@@ -52,3 +52,5 @@
 | 2026-02-26 | self | Added new language/framework skills without immediately extending installer groups can hide install paths. | Whenever importing a new top-level domain skill, add/validate a matching `--group` in installer and run `--group <name> --dry-run`. |
 
 | 2026-02-26 | self | Assumed Lucide icon filenames without validating current catalog; initial downloads had 404s. | Query icon catalog first, then pin verified names in a mapping manifest before batch fetch. |
+
+| 2026-02-26 | self | New skill imports with new prefixes need explicit installer group mapping to stay discoverable by cohort. | Add/update installer group + dry-run validation (`--group <prefix>`) for every new top-level prefix skill. |

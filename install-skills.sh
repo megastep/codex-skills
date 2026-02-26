@@ -31,6 +31,7 @@ declare -a SKILL_GROUPS=(
   "react"
   "prompt"
   "test"
+  "feature"
 )
 
 declare -a GROUP_PREFIXES=(
@@ -47,6 +48,7 @@ declare -a GROUP_PREFIXES=(
   "react"
   "prompt"
   "test"
+  "feature"
 )
 
 load_available_skills() {

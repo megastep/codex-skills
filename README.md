@@ -1,6 +1,6 @@
 # codex-skills
 
-Codex-format skills for SEO, blog, paid ads, DevOps, full-stack implementation, database performance, Kotlin, TypeScript, Vue, React, prompt engineering, testing, and documentation workflows, converted from Claude-style skills and organized for easy reuse.
+Codex-format skills for SEO, blog, paid ads, DevOps, full-stack implementation, feature specification, database performance, Kotlin, TypeScript, Vue, React, prompt engineering, testing, and documentation workflows, converted from Claude-style skills and organized for easy reuse.
 
 ## What Is In This Repo
 
@@ -21,6 +21,7 @@ Codex-format skills for SEO, blog, paid ads, DevOps, full-stack implementation, 
 - `react-expert/`: React 19/Server Components implementation skill
 - `prompt-engineer/`: LLM prompt design, optimization, and evaluation skill
 - `test-master/`: Comprehensive test strategy and implementation skill
+- `feature-forge/`: Feature discovery and specification skill
 - `docs/`: Contributor and migration documentation
 
 ## Current Skill Set
@@ -102,6 +103,9 @@ prompt/
 
 test/
 └── test-master
+
+feature/
+└── feature-forge
 ```
 
 ## Repository Layout
@@ -181,7 +185,11 @@ test/
 │   ├── SKILL.md
 │   ├── agents/openai.yaml
 │   └── references/
-└── test-master/
+├── test-master/
+│   ├── SKILL.md
+│   ├── agents/openai.yaml
+│   └── references/
+└── feature-forge/
     ├── SKILL.md
     ├── agents/openai.yaml
     └── references/
@@ -232,6 +240,7 @@ Use the bundled installer to copy skills from this repo into your local Codex sk
 ./install-skills.sh --group react
 ./install-skills.sh --group prompt
 ./install-skills.sh --group test
+./install-skills.sh --group feature
 
 # install specific skills
 ./install-skills.sh --skill seo --skill ads-google
@@ -313,3 +322,7 @@ The Prompt Engineer skill in this repository was originally sourced from:
 The Test Master skill in this repository was originally sourced from:
 
 - [Jeffallan/claude-skills](https://github.com/Jeffallan/claude-skills/blob/main/skills/test-master/SKILL.md)
+
+The Feature Forge skill in this repository was originally sourced from:
+
+- [Jeffallan/claude-skills](https://github.com/Jeffallan/claude-skills/tree/main/skills/feature-forge)
