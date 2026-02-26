@@ -229,6 +229,12 @@ multi_agent = true
 
 ## Install Locally
 
+If you use the `skills` CLI, you can install this collection directly:
+
+```bash
+npx skills add megastep/codex-skills
+```
+
 Use the bundled installer to copy skills from this repo into your local Codex skills directory (`$CODEX_HOME/skills`, default `~/.codex/skills`).
 
 ```bash
