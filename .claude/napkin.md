@@ -38,3 +38,5 @@
 - Installer ergonomics improve with both copy and symlink modes; symlink mode is best for active skill development loops.
 
 | 2026-02-26 | self | Multi-agent docs were fetched but not wired into orchestrator SKILL.md guidance in first pass. | After importing skills, explicitly add Codex `spawn_agent` + `wait` role mapping (`explorer`/`worker`/`default`) in top-level orchestrators and README. |
+
+| 2026-02-26 | user | User explicitly requested no delete operations in the repo. | Avoid delete commands in `/Users/megastep/src/codex-skills`; prefer additive/overwrite-safe edits only. |

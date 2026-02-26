@@ -1,6 +1,6 @@
 # codex-skills
 
-Codex-format skills for SEO, blog, and paid ads workflows, converted from Claude-style skills and organized for easy reuse.
+Codex-format skills for SEO, blog, paid ads, DevOps, and full-stack implementation workflows, converted from Claude-style skills and organized for easy reuse.
 
 ## What Is In This Repo
 
@@ -10,6 +10,8 @@ Codex-format skills for SEO, blog, and paid ads workflows, converted from Claude
 - `blog-*`: Specialized sub-skills (write, rewrite, analyze, strategy, schema, and more)
 - `seo/`: Top-level SEO orchestrator skill with shared references, templates, and scripts
 - `seo-*`: Specialized sub-skills (audit, content, schema, technical, sitemap, GEO, and more)
+- `devops-engineer/`: CI/CD, infrastructure-as-code, container, and operations engineering skill
+- `fullstack-guardian/`: End-to-end feature implementation skill across frontend, backend, and security
 - `docs/`: Contributor and migration documentation
 
 ## Current Skill Set
@@ -60,6 +62,12 @@ seo/
 ├── seo-programmatic
 ├── seo-competitor-pages
 └── seo-hreflang
+
+devops/
+└── devops-engineer
+
+fullstack/
+└── fullstack-guardian
 ```
 
 ## Repository Layout
@@ -96,9 +104,17 @@ seo/
 │   ├── assets/
 │   ├── references/
 │   └── scripts/
-└── seo-*/
+├── seo-*/
+│   ├── SKILL.md
+│   └── agents/openai.yaml
+├── devops-engineer/
     ├── SKILL.md
-    └── agents/openai.yaml
+    ├── agents/openai.yaml
+    └── references/
+└── fullstack-guardian/
+    ├── SKILL.md
+    ├── agents/openai.yaml
+    └── references/
 ```
 
 ## Quick Start
@@ -118,7 +134,7 @@ This repo is designed to work with Codex multi-agent orchestration for heavy aud
 multi_agent = true
 ```
 
-2. Use orchestrator skills (`$seo`, `$blog`, `$ads`) for top-level tasks.
+2. Use orchestrator skills (`$seo`, `$blog`, `$ads`) and domain skills (for example, `$devops-engineer`) for top-level tasks.
 3. For broad audits, run specialist checks in parallel with `spawn_agent`, then consolidate with `wait`.
 4. Prefer Codex built-in agent roles for consistency:
    - `explorer` for repository/data discovery
@@ -136,6 +152,8 @@ Use the bundled installer to copy skills from this repo into your local Codex sk
 # install by group
 ./install-skills.sh --group seo
 ./install-skills.sh --group ads --group blog
+./install-skills.sh --group devops
+./install-skills.sh --group fullstack
 
 # install specific skills
 ./install-skills.sh --skill seo --skill ads-google
@@ -173,3 +191,11 @@ The blog skills in this repository were originally sourced from:
 The paid ads skills in this repository were originally sourced from:
 
 - [AgriciDaniel/claude-ads](https://github.com/AgriciDaniel/claude-ads)
+
+The DevOps Engineer skill in this repository was originally sourced from:
+
+- [Jeffallan/claude-skills](https://github.com/Jeffallan/claude-skills/tree/main/skills/devops-engineer)
+
+The Fullstack Guardian skill in this repository was originally sourced from:
+
+- [Jeffallan/claude-skills](https://github.com/Jeffallan/claude-skills/tree/main/skills/fullstack-guardian)

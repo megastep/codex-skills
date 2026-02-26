@@ -31,7 +31,7 @@ Install Codex skills from this repository into your local Codex skills directory
 
 Options:
   --all                  Install all skills (default when no filters are set)
-  --group <name>         Install a skill group: seo, ads, blog (repeatable)
+  --group <name>         Install a skill group: seo, ads, blog, devops, fullstack (repeatable)
   --skill <name>         Install a specific skill directory name (repeatable)
   --dest <path>          Destination skills directory (default: $DEST_DEFAULT)
   --force                Overwrite existing installed skills
@@ -55,6 +55,8 @@ print_list() {
   echo "  - seo"
   echo "  - ads"
   echo "  - blog"
+  echo "  - devops"
+  echo "  - fullstack"
   echo
   echo "Skills:"
   available_skills | sed 's/^/  - /'
@@ -72,8 +74,14 @@ collect_group_skills() {
     blog)
       available_skills | rg '^blog($|-)' || true
       ;;
+    devops)
+      available_skills | rg '^devops($|-)' || true
+      ;;
+    fullstack)
+      available_skills | rg '^fullstack($|-)' || true
+      ;;
     *)
-      echo "Error: unknown group '$group' (valid: seo, ads, blog)" >&2
+      echo "Error: unknown group '$group' (valid: seo, ads, blog, devops, fullstack)" >&2
       exit 1
       ;;
   esac

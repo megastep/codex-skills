@@ -1,0 +1,4 @@
+interface:
+  display_name: "Fullstack Guardian"
+  short_description: "End-to-end feature implementation across frontend, backend, and security"
+  default_prompt: "Use $fullstack-guardian to design and implement full-stack features with frontend, backend, and security requirements addressed together."
