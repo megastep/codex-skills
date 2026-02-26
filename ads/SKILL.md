@@ -23,29 +23,29 @@ LinkedIn, TikTok, Microsoft). Orchestrates 12 specialized sub-skills and
 
 | Command | What it does |
 |---------|-------------|
-| `/ads audit` | Full multi-platform audit with parallel subagent delegation |
-| `/ads google` | Google Ads deep analysis (Search, PMax, YouTube) |
-| `/ads meta` | Meta Ads deep analysis (FB, IG, Advantage+) |
-| `/ads youtube` | YouTube Ads specific analysis |
-| `/ads linkedin` | LinkedIn Ads deep analysis (B2B, Lead Gen) |
-| `/ads tiktok` | TikTok Ads deep analysis (Creative, Shop, Smart+) |
-| `/ads microsoft` | Microsoft/Bing Ads deep analysis (Copilot, Import) |
-| `/ads creative` | Cross-platform creative quality audit |
-| `/ads landing` | Landing page quality assessment for ad campaigns |
-| `/ads budget` | Budget allocation and bidding strategy review |
-| `/ads plan <business-type>` | Strategic ad plan with industry templates |
-| `/ads competitor` | Competitor ad intelligence analysis |
+| `$ads audit` | Full multi-platform audit with parallel subagent delegation |
+| `$ads google` | Google Ads deep analysis (Search, PMax, YouTube) |
+| `$ads meta` | Meta Ads deep analysis (FB, IG, Advantage+) |
+| `$ads youtube` | YouTube Ads specific analysis |
+| `$ads linkedin` | LinkedIn Ads deep analysis (B2B, Lead Gen) |
+| `$ads tiktok` | TikTok Ads deep analysis (Creative, Shop, Smart+) |
+| `$ads microsoft` | Microsoft/Bing Ads deep analysis (Copilot, Import) |
+| `$ads creative` | Cross-platform creative quality audit |
+| `$ads landing` | Landing page quality assessment for ad campaigns |
+| `$ads budget` | Budget allocation and bidding strategy review |
+| `$ads plan <business-type>` | Strategic ad plan with industry templates |
+| `$ads competitor` | Competitor ad intelligence analysis |
 
 ## Orchestration Logic
 
-When the user invokes `/ads audit`, delegate to subagents in parallel:
+When the user invokes `$ads audit`, delegate to subagents in parallel:
 1. Collect account data (exports, screenshots, or API access details)
 2. Detect business type and identify active platforms
 3. Spawn subagents: audit-google, audit-meta, audit-creative, audit-tracking, audit-budget, audit-compliance
 4. Collect results and generate unified report with Ads Health Score (0-100)
 5. Create prioritized action plan with Quick Wins
 
-For individual commands (`/ads google`, `/ads meta`, etc.), load the relevant
+For individual commands (`$ads google`, `$ads meta`, etc.), load the relevant
 sub-skill directly.
 
 ## Industry Detection

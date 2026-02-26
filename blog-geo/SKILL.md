@@ -242,5 +242,5 @@ Output the following report:
 2. [Second most impactful]
 3. [Third most impactful]
 
-Run `/blog analyze <file>` for full content quality scoring.
+Run `$blog analyze <file>` for full content quality scoring.
 ```

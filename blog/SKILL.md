@@ -26,19 +26,19 @@ Perplexity, Google AI Overviews, Gemini).
 
 | Command | What it does |
 |---------|-------------|
-| `/blog write <topic>` | Write a new blog post from scratch |
-| `/blog rewrite <file>` | Rewrite/optimize an existing blog post |
-| `/blog analyze <file-or-url>` | Audit blog quality with 0-100 score |
-| `/blog brief <topic>` | Generate a detailed content brief |
-| `/blog calendar [monthly\|quarterly]` | Generate an editorial calendar |
-| `/blog strategy <niche>` | Blog strategy and topic ideation |
-| `/blog outline <topic>` | Generate SERP-informed content outline |
-| `/blog seo-check <file>` | Post-writing SEO validation checklist |
-| `/blog schema <file>` | Generate JSON-LD schema markup |
-| `/blog repurpose <file>` | Repurpose content for other platforms |
-| `/blog geo <file>` | AI citation readiness audit |
-| `/blog audit [directory]` | Full-site blog health assessment |
-| `/blog update <file>` | Update existing post with fresh stats (routes to rewrite) |
+| `$blog write <topic>` | Write a new blog post from scratch |
+| `$blog rewrite <file>` | Rewrite/optimize an existing blog post |
+| `$blog analyze <file-or-url>` | Audit blog quality with 0-100 score |
+| `$blog brief <topic>` | Generate a detailed content brief |
+| `$blog calendar [monthly\|quarterly]` | Generate an editorial calendar |
+| `$blog strategy <niche>` | Blog strategy and topic ideation |
+| `$blog outline <topic>` | Generate SERP-informed content outline |
+| `$blog seo-check <file>` | Post-writing SEO validation checklist |
+| `$blog schema <file>` | Generate JSON-LD schema markup |
+| `$blog repurpose <file>` | Repurpose content for other platforms |
+| `$blog geo <file>` | AI citation readiness audit |
+| `$blog audit [directory]` | Full-site blog health assessment |
+| `$blog update <file>` | Update existing post with fresh stats (routes to rewrite) |
 
 ## Orchestration Logic
 
@@ -215,7 +215,7 @@ prioritized improvement recommendations.
 
 ## Execution Flow
 
-Standard execution order for `/blog write`:
+Standard execution order for `$blog write`:
 
 1. **Parse** -- Identify topic, detect platform, select template
 2. **Research** -- Spawn `blog-researcher` agent for statistics, sources, SERP data
@@ -225,8 +225,8 @@ Standard execution order for `/blog write`:
 6. **Score** -- Spawn `blog-reviewer` agent for 100-point quality audit
 7. **Deliver** -- Output final content with scorecard and improvement notes
 
-For `/blog analyze`, only steps 1 and 6 run (read + score).
-For `/blog audit`, step 6 runs in parallel across all posts in the directory.
+For `$blog analyze`, only steps 1 and 6 run (read + score).
+For `$blog audit`, step 6 runs in parallel across all posts in the directory.
 
 ### Internal Workflows (Not User-Facing Commands)
 
@@ -239,9 +239,9 @@ Users do not need to call it directly.
 Chart generation is built-in — no external dependencies required for full functionality.
 
 **Optional companion skills** (for deeper analysis of published pages):
-- `/seo` — Full SEO audit of published blog pages
-- `/seo-schema` — Schema markup validation and generation
-- `/seo-geo` — AI citation optimization audit
+- `$seo` — Full SEO audit of published blog pages
+- `$seo-schema` — Schema markup validation and generation
+- `$seo-geo` — AI citation optimization audit
 
 ## Anti-Patterns (Never Do These)
 

@@ -438,5 +438,5 @@ Present the completed article with a summary:
 - Review and customize for your brand voice
 - Resolve [INTERNAL-LINK] placeholders with actual URLs
 - Add internal links to your existing content
-- Run `/blog analyze <file>` to verify quality score
+- Run `$blog analyze <file>` to verify quality score
 ```

@@ -23,18 +23,18 @@ e-commerce, publishers, agencies). Orchestrates 12 specialized sub-skills.
 
 | Command | What it does |
 |---------|-------------|
-| `/seo audit <url>` | Full website audit with parallel specialized analyses |
-| `/seo page <url>` | Deep single-page analysis |
-| `/seo sitemap <url or generate>` | Analyze or generate XML sitemaps |
-| `/seo schema <url>` | Detect, validate, and generate Schema.org markup |
-| `/seo images <url>` | Image optimization analysis |
-| `/seo technical <url>` | Technical SEO audit (8 categories) |
-| `/seo content <url>` | E-E-A-T and content quality analysis |
-| `/seo geo <url>` | AI Overviews / Generative Engine Optimization |
-| `/seo plan <business-type>` | Strategic SEO planning |
-| `/seo programmatic [url\|plan]` | Programmatic SEO analysis and planning |
-| `/seo competitor-pages [url\|generate]` | Competitor comparison page generation |
-| `/seo hreflang [url]` | Hreflang/i18n SEO audit and generation |
+| `$seo audit <url>` | Full website audit with parallel specialized analyses |
+| `$seo page <url>` | Deep single-page analysis |
+| `$seo sitemap <url or generate>` | Analyze or generate XML sitemaps |
+| `$seo schema <url>` | Detect, validate, and generate Schema.org markup |
+| `$seo images <url>` | Image optimization analysis |
+| `$seo technical <url>` | Technical SEO audit (8 categories) |
+| `$seo content <url>` | E-E-A-T and content quality analysis |
+| `$seo geo <url>` | AI Overviews / Generative Engine Optimization |
+| `$seo plan <business-type>` | Strategic SEO planning |
+| `$seo programmatic [url\|plan]` | Programmatic SEO analysis and planning |
+| `$seo competitor-pages [url\|generate]` | Competitor comparison page generation |
+| `$seo hreflang [url]` | Hreflang/i18n SEO audit and generation |
 
 ## Codex Invocation Notes
 

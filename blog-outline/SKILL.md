@@ -5,7 +5,7 @@ description: >
   content gap analysis, section-by-section word count targets, chart and image
   placement markers, FAQ question planning, and internal linking zones. Lighter
   than a full content brief — generates article skeleton and structure only,
-  ready for /blog write to consume. Use when user says "outline", "blog outline",
+  ready for $blog write to consume. Use when user says "outline", "blog outline",
   "content outline", "structure blog", "plan sections", "article skeleton",
   "heading structure", "SERP analysis", "competitive outline", "plan article".
 ---
@@ -125,6 +125,6 @@ After generating the outline, add a dedicated content gaps analysis:
 ### Step 5: Save
 
 Save the outline to `outlines/[slug]-outline.md` or to a user-specified path.
-Confirm the outline is ready for `/blog write` to consume.
+Confirm the outline is ready for `$blog write` to consume.
 
 If the `outlines/` directory does not exist, create it.
