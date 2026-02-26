@@ -12,15 +12,64 @@ SYMLINK=0
 
 declare -a SELECTED_GROUPS=()
 declare -a SKILLS=()
+declare -a AVAILABLE_SKILLS=()
 
-available_skills() {
-  find "$REPO_ROOT" -mindepth 1 -maxdepth 1 -type d \
+declare -a SKILL_GROUPS=(
+  "seo"
+  "ads"
+  "blog"
+  "devops"
+  "fullstack"
+  "database"
+  "kotlin"
+  "typescript"
+  "code"
+  "vue"
+)
+
+declare -a GROUP_PREFIXES=(
+  "seo"
+  "ads"
+  "blog"
+  "devops"
+  "fullstack"
+  "database"
+  "kotlin"
+  "typescript"
+  "code"
+  "vue"
+)
+
+load_available_skills() {
+  local skill
+  AVAILABLE_SKILLS=()
+  while IFS= read -r skill; do
+    [[ -n "$skill" ]] || continue
+    AVAILABLE_SKILLS+=("$skill")
+  done < <(find "$REPO_ROOT" -mindepth 1 -maxdepth 1 -type d \
     ! -name '.git' \
     ! -name '.claude' \
     ! -name 'docs' \
     -exec test -f '{}/SKILL.md' ';' -print \
     | xargs -n1 basename \
-    | sort
+    | sort)
+}
+
+group_names_csv() {
+  local IFS=", "
+  echo "${SKILL_GROUPS[*]}"
+}
+
+group_prefix_for() {
+  local group="$1"
+  local i
+  for i in "${!SKILL_GROUPS[@]}"; do
+    if [[ "${SKILL_GROUPS[$i]}" == "$group" ]]; then
+      echo "${GROUP_PREFIXES[$i]}"
+      return 0
+    fi
+  done
+  return 1
 }
 
 print_usage() {
@@ -31,7 +80,7 @@ Install Codex skills from this repository into your local Codex skills directory
 
 Options:
   --all                  Install all skills (default when no filters are set)
-  --group <name>         Install a skill group: seo, ads, blog, devops, fullstack (repeatable)
+  --group <name>         Install a skill group: $(group_names_csv) (repeatable)
   --skill <name>         Install a specific skill directory name (repeatable)
   --dest <path>          Destination skills directory (default: $DEST_DEFAULT)
   --force                Overwrite existing installed skills
@@ -52,39 +101,32 @@ USAGE
 
 print_list() {
   echo "Groups:"
-  echo "  - seo"
-  echo "  - ads"
-  echo "  - blog"
-  echo "  - devops"
-  echo "  - fullstack"
+  local group
+  for group in "${SKILL_GROUPS[@]}"; do
+    echo "  - $group"
+  done
   echo
   echo "Skills:"
-  available_skills | sed 's/^/  - /'
+  local skill
+  for skill in "${AVAILABLE_SKILLS[@]}"; do
+    echo "  - $skill"
+  done
 }
 
 collect_group_skills() {
   local group="$1"
-  case "$group" in
-    seo)
-      available_skills | rg '^seo($|-)' || true
-      ;;
-    ads)
-      available_skills | rg '^ads($|-)' || true
-      ;;
-    blog)
-      available_skills | rg '^blog($|-)' || true
-      ;;
-    devops)
-      available_skills | rg '^devops($|-)' || true
-      ;;
-    fullstack)
-      available_skills | rg '^fullstack($|-)' || true
-      ;;
-    *)
-      echo "Error: unknown group '$group' (valid: seo, ads, blog, devops, fullstack)" >&2
-      exit 1
-      ;;
-  esac
+  local prefix
+  local skill
+  prefix="$(group_prefix_for "$group")" || {
+    echo "Error: unknown group '$group' (valid: $(group_names_csv))" >&2
+    exit 1
+  }
+
+  for skill in "${AVAILABLE_SKILLS[@]}"; do
+    if [[ "$skill" == "$prefix" || "$skill" == "$prefix"-* ]]; then
+      echo "$skill"
+    fi
+  done
 }
 
 install_one() {
@@ -181,6 +223,8 @@ while [[ $# -gt 0 ]]; do
   esac
 done
 
+load_available_skills
+
 if [[ "$LIST_ONLY" -eq 1 ]]; then
   print_list
   exit 0
@@ -192,7 +236,7 @@ skills_file="$(mktemp)"
 trap 'rm -f "$skills_file"' EXIT
 
 if [[ "$INSTALL_ALL" -eq 1 || ( -z "${SELECTED_GROUPS[*]-}" && -z "${SKILLS[*]-}" ) ]]; then
-  available_skills >> "$skills_file"
+  printf "%s\n" "${AVAILABLE_SKILLS[@]}" >> "$skills_file"
 fi
 
 if [[ -n "${SELECTED_GROUPS[*]-}" ]]; then

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Code Documenter"
+  short_description: "Docstrings, API docs, and developer documentation workflows"
+  default_prompt: "Use $code-documenter to create and improve code documentation, API specs, and developer guides with coverage reporting."

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Vue Expert"
+  short_description: "Vue 3 Composition API, Nuxt, Pinia, and Vite implementation guidance"
+  default_prompt: "Use $vue-expert to build and optimize Vue 3/Nuxt features with Composition API, TypeScript, and modern tooling best practices."

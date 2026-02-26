@@ -40,3 +40,9 @@
 | 2026-02-26 | self | Multi-agent docs were fetched but not wired into orchestrator SKILL.md guidance in first pass. | After importing skills, explicitly add Codex `spawn_agent` + `wait` role mapping (`explorer`/`worker`/`default`) in top-level orchestrators and README. |
 
 | 2026-02-26 | user | User explicitly requested no delete operations in the repo. | Avoid delete commands in `/Users/megastep/src/codex-skills`; prefer additive/overwrite-safe edits only. |
+
+| 2026-02-26 | self | Used Python for simple markdown edits where `apply_patch` was sufficient. | Prefer `apply_patch` for single-file textual edits; reserve scripting for bulk/generated transformations. |
+
+| 2026-02-26 | self | Reintroduced Bash reserved var collision by naming a custom array `GROUPS` during installer refactor. | Never use `GROUPS`; standardize on `SKILL_GROUPS` for installer group metadata. |
+
+| 2026-02-26 | self | Installer refactor tests initially failed due reserved variable collision before full validation. | Always run `./install-skills.sh --list` and at least one grouped `--dry-run` immediately after installer edits. |

@@ -1,0 +1,4 @@
+interface:
+  display_name: "TypeScript Pro"
+  short_description: "Advanced TypeScript type-system and full-stack type safety guidance"
+  default_prompt: "Use $typescript-pro to design and implement advanced TypeScript features with strict type safety and production build ergonomics."

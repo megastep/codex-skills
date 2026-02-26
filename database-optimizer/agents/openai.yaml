@@ -1,0 +1,4 @@
+interface:
+  display_name: "Database Optimizer"
+  short_description: "Query, index, and database performance optimization guidance"
+  default_prompt: "Use $database-optimizer to analyze query performance, design indexing strategies, and propose measurable database tuning improvements."

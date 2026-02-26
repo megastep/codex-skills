@@ -1,6 +1,6 @@
 # codex-skills
 
-Codex-format skills for SEO, blog, paid ads, DevOps, and full-stack implementation workflows, converted from Claude-style skills and organized for easy reuse.
+Codex-format skills for SEO, blog, paid ads, DevOps, full-stack implementation, database performance, Kotlin, TypeScript, Vue, and documentation workflows, converted from Claude-style skills and organized for easy reuse.
 
 ## What Is In This Repo
 
@@ -12,6 +12,11 @@ Codex-format skills for SEO, blog, paid ads, DevOps, and full-stack implementati
 - `seo-*`: Specialized sub-skills (audit, content, schema, technical, sitemap, GEO, and more)
 - `devops-engineer/`: CI/CD, infrastructure-as-code, container, and operations engineering skill
 - `fullstack-guardian/`: End-to-end feature implementation skill across frontend, backend, and security
+- `database-optimizer/`: Database performance analysis and optimization skill
+- `kotlin-specialist/`: Kotlin/KMP/Compose/Ktor implementation skill
+- `typescript-pro/`: Advanced TypeScript type-system and tooling skill
+- `code-documenter/`: Code and API documentation generation skill
+- `vue-expert/`: Vue 3/Nuxt/Pinia implementation skill
 - `docs/`: Contributor and migration documentation
 
 ## Current Skill Set
@@ -68,6 +73,21 @@ devops/
 
 fullstack/
 └── fullstack-guardian
+
+database/
+└── database-optimizer
+
+kotlin/
+└── kotlin-specialist
+
+typescript/
+└── typescript-pro
+
+code/
+└── code-documenter
+
+vue/
+└── vue-expert
 ```
 
 ## Repository Layout
@@ -108,10 +128,30 @@ fullstack/
 │   ├── SKILL.md
 │   └── agents/openai.yaml
 ├── devops-engineer/
-    ├── SKILL.md
-    ├── agents/openai.yaml
-    └── references/
-└── fullstack-guardian/
+│   ├── SKILL.md
+│   ├── agents/openai.yaml
+│   └── references/
+├── fullstack-guardian/
+│   ├── SKILL.md
+│   ├── agents/openai.yaml
+│   └── references/
+├── database-optimizer/
+│   ├── SKILL.md
+│   ├── agents/openai.yaml
+│   └── references/
+├── kotlin-specialist/
+│   ├── SKILL.md
+│   ├── agents/openai.yaml
+│   └── references/
+├── typescript-pro/
+│   ├── SKILL.md
+│   ├── agents/openai.yaml
+│   └── references/
+├── code-documenter/
+│   ├── SKILL.md
+│   ├── agents/openai.yaml
+│   └── references/
+└── vue-expert/
     ├── SKILL.md
     ├── agents/openai.yaml
     └── references/
@@ -154,6 +194,11 @@ Use the bundled installer to copy skills from this repo into your local Codex sk
 ./install-skills.sh --group ads --group blog
 ./install-skills.sh --group devops
 ./install-skills.sh --group fullstack
+./install-skills.sh --group database
+./install-skills.sh --group kotlin
+./install-skills.sh --group typescript
+./install-skills.sh --group code
+./install-skills.sh --group vue
 
 # install specific skills
 ./install-skills.sh --skill seo --skill ads-google
@@ -199,3 +244,23 @@ The DevOps Engineer skill in this repository was originally sourced from:
 The Fullstack Guardian skill in this repository was originally sourced from:
 
 - [Jeffallan/claude-skills](https://github.com/Jeffallan/claude-skills/tree/main/skills/fullstack-guardian)
+
+The Database Optimizer skill in this repository was originally sourced from:
+
+- [Jeffallan/claude-skills](https://github.com/Jeffallan/claude-skills/blob/main/skills/database-optimizer/SKILL.md)
+
+The Kotlin Specialist skill in this repository was originally sourced from:
+
+- [Jeffallan/claude-skills](https://github.com/Jeffallan/claude-skills/tree/main/skills/kotlin-specialist)
+
+The TypeScript Pro skill in this repository was originally sourced from:
+
+- [Jeffallan/claude-skills](https://github.com/Jeffallan/claude-skills/tree/main/skills/typescript-pro)
+
+The Code Documenter skill in this repository was originally sourced from:
+
+- [Jeffallan/claude-skills](https://github.com/Jeffallan/claude-skills/tree/main/skills/code-documenter)
+
+The Vue Expert skill in this repository was originally sourced from:
+
+- [Jeffallan/claude-skills](https://github.com/Jeffallan/claude-skills/blob/main/skills/vue-expert/SKILL.md)
