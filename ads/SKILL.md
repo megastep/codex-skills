@@ -48,6 +48,13 @@ When the user invokes `$ads audit`, delegate to subagents in parallel:
 For individual commands (`$ads google`, `$ads meta`, etc.), load the relevant
 sub-skill directly.
 
+### Multi-Agent Execution (Codex)
+
+- Use `spawn_agent` with `worker` role for each audit stream during full-account reviews.
+- Use one `explorer` agent to gather account structure/evidence before specialized checks.
+- Use `wait` to synchronize all delegated audits before computing the unified health score.
+- Use the `default` agent to synthesize conflicts, prioritize recommendations, and present final output.
+
 ## Industry Detection
 
 Detect business type from ad account signals:

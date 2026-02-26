@@ -39,8 +39,9 @@ e-commerce, publishers, agencies). Orchestrates 12 specialized sub-skills.
 ## Codex Invocation Notes
 
 - Trigger this skill on natural-language requests such as "run an SEO audit", "analyze this page for SEO", or "validate schema markup".
-- Treat the slash-command examples as operation labels, not required CLI syntax.
+- Treat the `$...` command examples as operation labels, not required CLI syntax.
 - Prefer repository-local outputs and summarize assumptions before running broad crawls.
+- For full audits, use Codex multi-agent mode: `spawn_agent` specialists in parallel and `wait` for completion before synthesis.
 
 ## Orchestration Logic
 
@@ -51,6 +52,13 @@ When the user requests a full SEO audit, execute in this order:
 4. Create a prioritized action plan (Critical → High → Medium → Low)
 
 For individual requests, trigger the corresponding specialized skill directly.
+
+### Multi-Agent Role Mapping (Codex)
+
+- Use `explorer` agents for site discovery and evidence gathering.
+- Use `worker` agents for each specialist analysis (`seo-technical`, `seo-content`, `seo-schema`, `seo-sitemap`, `seo-images`).
+- Use the `default` agent to reconcile conflicts, compute final scoring, and deliver recommendations.
+- Keep delegated tasks independent and bounded (single URL/domain scope per agent unless user asks otherwise).
 
 ## Industry Detection
 

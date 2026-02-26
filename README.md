@@ -107,6 +107,24 @@ seo/
 2. Read [CONTRIBUTING.md](CONTRIBUTING.md) for conventions.
 3. Follow [docs/migration-claude-to-codex.md](docs/migration-claude-to-codex.md) when porting additional skills.
 
+## Codex Multi-Agent Support
+
+This repo is designed to work with Codex multi-agent orchestration for heavy audits.
+
+1. Enable multi-agent in Codex via `/experimental` or `~/.codex/config.toml`:
+
+```toml
+[features]
+multi_agent = true
+```
+
+2. Use orchestrator skills (`$seo`, `$blog`, `$ads`) for top-level tasks.
+3. For broad audits, run specialist checks in parallel with `spawn_agent`, then consolidate with `wait`.
+4. Prefer Codex built-in agent roles for consistency:
+   - `explorer` for repository/data discovery
+   - `worker` for execution and artifact generation
+   - `default` for synthesis and final report delivery
+
 ## Install Locally
 
 Use the bundled installer to copy skills from this repo into your local Codex skills directory (`$CODEX_HOME/skills`, default `~/.codex/skills`).

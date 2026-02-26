@@ -79,6 +79,14 @@ Detect blog platform from file extension and project structure:
 
 Adapt output format to detected platform. Default to standard markdown if unknown.
 
+### Multi-Agent Execution (Codex)
+
+For complex tasks (site audit, large rewrites, multi-post analysis), use Codex multi-agent orchestration:
+- `spawn_agent` `explorer` for source discovery, SERP/source capture, and file inventory.
+- `spawn_agent` `worker` for parallel execution of research, writing, SEO validation, and review tasks.
+- Use `wait` to gather all worker outputs before final synthesis.
+- Use the `default` agent as final arbiter for score consolidation and user-facing deliverables.
+
 ## Core Methodology -- The 6 Pillars
 
 Every blog post targets these 6 optimization pillars:
@@ -195,20 +203,20 @@ Templates are in `templates/` and contain section structure, markers, and checkl
 
 ### Agent Details
 
-**blog-researcher**: Runs as a Task subagent. Uses WebSearch to find current statistics,
+**blog-researcher**: Runs as a Codex delegated agent (prefer `explorer` for discovery tasks). Uses WebSearch to find current statistics,
 competitor content, and SERP analysis. Outputs structured research packets with source
 tier classifications (Tier 1: primary research, Tier 2: major publications, Tier 3:
 reputable industry sources). Also sources Pixabay/Unsplash/Pexels image URLs.
 
-**blog-writer**: Receives research packets and content briefs. Writes content using the
+**blog-writer**: Receives research packets and content briefs (prefer `worker`). Writes content using the
 selected template structure. Applies answer-first formatting, citation capsules, and
 TL;DR blocks. Outputs platform-formatted content ready for the SEO agent.
 
-**blog-seo**: Post-writing validation agent. Checks title tag length (50-60 chars),
+**blog-seo**: Post-writing validation agent (prefer `worker`). Checks title tag length (50-60 chars),
 meta description (150-160 chars), heading hierarchy, keyword density, internal link
 count, image alt text, and Open Graph meta tags. Returns pass/fail checklist.
 
-**blog-reviewer**: Final quality gate. Runs the full 5-category 100-point scoring
+**blog-reviewer**: Final quality gate (prefer `worker`). Runs the full 5-category 100-point scoring
 rubric. Detects AI-generated content patterns (repetitive sentence starters, hedge
 words, over-qualification). Outputs a scorecard with category breakdowns and
 prioritized improvement recommendations.
@@ -231,7 +239,7 @@ For `$blog audit`, step 6 runs in parallel across all posts in the directory.
 ### Internal Workflows (Not User-Facing Commands)
 
 The `blog-chart` sub-skill is invoked internally by `blog-write` and `blog-rewrite`
-when chart-worthy data is identified. It is not a standalone slash command.
+when chart-worthy data is identified. It is not a standalone `$...` command.
 Users do not need to call it directly.
 
 ## Integration

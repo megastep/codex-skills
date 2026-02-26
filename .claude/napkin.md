@@ -36,3 +36,5 @@
 | 2026-02-25 | self | Empty array handling with `set -u` broke loops on this shell. | Guard array reads with `${arr[*]-}` checks before iterating under nounset.
 ## Patterns That Work
 - Installer ergonomics improve with both copy and symlink modes; symlink mode is best for active skill development loops.
+
+| 2026-02-26 | self | Multi-agent docs were fetched but not wired into orchestrator SKILL.md guidance in first pass. | After importing skills, explicitly add Codex `spawn_agent` + `wait` role mapping (`explorer`/`worker`/`default`) in top-level orchestrators and README. |

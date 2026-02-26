@@ -29,12 +29,14 @@ Initial paid ads skill conversions in this repo were sourced from:
 7. Add `agents/openai.yaml` interface metadata.
 8. Validate all relative paths referenced by `SKILL.md`.
 9. Add the skill to root `README.md`.
+10. Add Codex multi-agent execution notes for orchestrators (`spawn_agent` + `wait`).
 
 ## Common Conversion Rules
 
 - Replace provider-specific tool names with generic operational steps.
 - Convert slash-command examples into intent labels (not required CLI syntax).
 - Keep orchestration order explicit when multiple sub-skills are involved.
+- If delegation is needed, map work to Codex agent roles (`explorer`, `worker`, `default`).
 - Add hard limits for crawling/scraping/parallel operations.
 - Keep output files/report sections concrete.
 
