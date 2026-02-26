@@ -1,0 +1,15 @@
+{
+  "seo": "book-search",
+  "ads": "badge-dollar-sign",
+  "blog": "book-open-text",
+  "devops": "cog",
+  "fullstack": "codesandbox",
+  "database": "chart-network",
+  "kotlin": "braces",
+  "typescript": "code-xml",
+  "code": "code",
+  "vue": "component",
+  "react": "atom",
+  "prompt": "bot-message-square",
+  "test": "clipboard-check"
+}

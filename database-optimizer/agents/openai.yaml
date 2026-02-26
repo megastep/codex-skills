@@ -1,4 +1,6 @@
 interface:
   display_name: "Database Optimizer"
   short_description: "Query, index, and database performance optimization guidance"
+  icon_small: "./assets/icon.svg"
+  icon_large: "./assets/icon.svg"
   default_prompt: "Use $database-optimizer to analyze query performance, design indexing strategies, and propose measurable database tuning improvements."

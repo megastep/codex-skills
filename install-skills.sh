@@ -2,8 +2,11 @@
 set -euo pipefail
 
 REPO_ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
-DEST_DEFAULT="${CODEX_HOME:-$HOME/.codex}/skills"
+CODEX_DEST_DEFAULT="${CODEX_HOME:-$HOME/.codex}/skills"
+AGENTS_DEST_DEFAULT="$HOME/.agents/skills"
+DEST_DEFAULT="$CODEX_DEST_DEFAULT"
 DEST="$DEST_DEFAULT"
+TARGET="codex"
 FORCE=0
 DRY_RUN=0
 LIST_ONLY=0
@@ -25,6 +28,9 @@ declare -a SKILL_GROUPS=(
   "typescript"
   "code"
   "vue"
+  "react"
+  "prompt"
+  "test"
 )
 
 declare -a GROUP_PREFIXES=(
@@ -38,6 +44,9 @@ declare -a GROUP_PREFIXES=(
   "typescript"
   "code"
   "vue"
+  "react"
+  "prompt"
+  "test"
 )
 
 load_available_skills() {
@@ -82,6 +91,8 @@ Options:
   --all                  Install all skills (default when no filters are set)
   --group <name>         Install a skill group: $(group_names_csv) (repeatable)
   --skill <name>         Install a specific skill directory name (repeatable)
+  --target <name>        Install target: codex or agents (default: codex)
+  --agents               Shortcut for --target agents
   --dest <path>          Destination skills directory (default: $DEST_DEFAULT)
   --force                Overwrite existing installed skills
   --symlink              Symlink skills to this repo instead of copying
@@ -91,6 +102,8 @@ Options:
 
 Examples:
   ./install-skills.sh --all
+  ./install-skills.sh --target agents --all
+  ./install-skills.sh --agents --group seo
   ./install-skills.sh --group seo
   ./install-skills.sh --group ads --group blog
   ./install-skills.sh --skill seo --skill ads-google
@@ -190,6 +203,32 @@ while [[ $# -gt 0 ]]; do
       SKILLS+=("$2")
       shift 2
       ;;
+    --target)
+      [[ $# -ge 2 ]] || { echo "Error: --target requires a value" >&2; exit 1; }
+      case "$2" in
+        codex)
+          TARGET="codex"
+          DEST_DEFAULT="$CODEX_DEST_DEFAULT"
+          DEST="$DEST_DEFAULT"
+          ;;
+        agents)
+          TARGET="agents"
+          DEST_DEFAULT="$AGENTS_DEST_DEFAULT"
+          DEST="$DEST_DEFAULT"
+          ;;
+        *)
+          echo "Error: invalid --target '$2' (valid: codex, agents)" >&2
+          exit 1
+          ;;
+      esac
+      shift 2
+      ;;
+    --agents)
+      TARGET="agents"
+      DEST_DEFAULT="$AGENTS_DEST_DEFAULT"
+      DEST="$DEST_DEFAULT"
+      shift
+      ;;
     --dest)
       [[ $# -ge 2 ]] || { echo "Error: --dest requires a path" >&2; exit 1; }
       DEST="$2"
@@ -259,6 +298,7 @@ if [[ ! -s "$skills_file" ]]; then
 fi
 
 echo "Destination: $DEST"
+echo "Target: $TARGET"
 if [[ "$DRY_RUN" -eq 1 ]]; then
   echo "Mode: dry-run"
 fi

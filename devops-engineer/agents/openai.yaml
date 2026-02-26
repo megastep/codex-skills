@@ -1,4 +1,6 @@
 interface:
   display_name: "DevOps Engineer"
   short_description: "CI/CD, IaC, containerization, and deployment automation guidance"
+  icon_small: "./assets/icon.svg"
+  icon_large: "./assets/icon.svg"
   default_prompt: "Use $devops-engineer to design or implement CI/CD, infrastructure-as-code, and production deployment workflows with rollback and operational safeguards."

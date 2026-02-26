@@ -46,3 +46,9 @@
 | 2026-02-26 | self | Reintroduced Bash reserved var collision by naming a custom array `GROUPS` during installer refactor. | Never use `GROUPS`; standardize on `SKILL_GROUPS` for installer group metadata. |
 
 | 2026-02-26 | self | Installer refactor tests initially failed due reserved variable collision before full validation. | Always run `./install-skills.sh --list` and at least one grouped `--dry-run` immediately after installer edits. |
+
+| 2026-02-26 | self | Imported review/documentation skills can default to actionable edits unless constrained. | For reviewer-oriented skills, add explicit read-only default and confirmation guard before modifications. |
+
+| 2026-02-26 | self | Added new language/framework skills without immediately extending installer groups can hide install paths. | Whenever importing a new top-level domain skill, add/validate a matching `--group` in installer and run `--group <name> --dry-run`. |
+
+| 2026-02-26 | self | Assumed Lucide icon filenames without validating current catalog; initial downloads had 404s. | Query icon catalog first, then pin verified names in a mapping manifest before batch fetch. |

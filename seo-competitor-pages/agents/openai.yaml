@@ -1,4 +1,6 @@
 interface:
   display_name: "Seo Competitor Pages"
   short_description: "Help with Seo Competitor Pages tasks"
+  icon_small: "./assets/icon.svg"
+  icon_large: "./assets/icon.svg"
   default_prompt: "Use $seo-competitor-pages to handle this SEO task and provide an actionable report with prioritized fixes."

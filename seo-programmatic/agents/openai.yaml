@@ -1,4 +1,6 @@
 interface:
   display_name: "Seo Programmatic"
   short_description: "Help with Seo Programmatic tasks"
+  icon_small: "./assets/icon.svg"
+  icon_large: "./assets/icon.svg"
   default_prompt: "Use $seo-programmatic to handle this SEO task and provide an actionable report with prioritized fixes."

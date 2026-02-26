@@ -1,0 +1,6 @@
+interface:
+  display_name: "Code Reviewer"
+  short_description: "Structured code review for correctness, security, and maintainability"
+  icon_small: "./assets/icon.svg"
+  icon_large: "./assets/icon.svg"
+  default_prompt: "Use $code-reviewer to perform a structured code review with prioritized findings and actionable recommendations."

@@ -1,0 +1,6 @@
+interface:
+  display_name: "React Expert"
+  short_description: "React 19, Server Components, and performance-focused architecture guidance"
+  icon_small: "./assets/icon.svg"
+  icon_large: "./assets/icon.svg"
+  default_prompt: "Use $react-expert to implement and optimize React features with modern patterns, accessibility, and robust testing."

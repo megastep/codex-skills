@@ -1,6 +1,6 @@
 # codex-skills
 
-Codex-format skills for SEO, blog, paid ads, DevOps, full-stack implementation, database performance, Kotlin, TypeScript, Vue, and documentation workflows, converted from Claude-style skills and organized for easy reuse.
+Codex-format skills for SEO, blog, paid ads, DevOps, full-stack implementation, database performance, Kotlin, TypeScript, Vue, React, prompt engineering, testing, and documentation workflows, converted from Claude-style skills and organized for easy reuse.
 
 ## What Is In This Repo
 
@@ -16,7 +16,11 @@ Codex-format skills for SEO, blog, paid ads, DevOps, full-stack implementation, 
 - `kotlin-specialist/`: Kotlin/KMP/Compose/Ktor implementation skill
 - `typescript-pro/`: Advanced TypeScript type-system and tooling skill
 - `code-documenter/`: Code and API documentation generation skill
+- `code-reviewer/`: Structured code review and quality audit skill
 - `vue-expert/`: Vue 3/Nuxt/Pinia implementation skill
+- `react-expert/`: React 19/Server Components implementation skill
+- `prompt-engineer/`: LLM prompt design, optimization, and evaluation skill
+- `test-master/`: Comprehensive test strategy and implementation skill
 - `docs/`: Contributor and migration documentation
 
 ## Current Skill Set
@@ -84,10 +88,20 @@ typescript/
 └── typescript-pro
 
 code/
-└── code-documenter
+├── code-documenter
+└── code-reviewer
 
 vue/
 └── vue-expert
+
+react/
+└── react-expert
+
+prompt/
+└── prompt-engineer
+
+test/
+└── test-master
 ```
 
 ## Repository Layout
@@ -151,7 +165,23 @@ vue/
 │   ├── SKILL.md
 │   ├── agents/openai.yaml
 │   └── references/
-└── vue-expert/
+├── code-reviewer/
+│   ├── SKILL.md
+│   ├── agents/openai.yaml
+│   └── references/
+├── vue-expert/
+│   ├── SKILL.md
+│   ├── agents/openai.yaml
+│   └── references/
+├── react-expert/
+│   ├── SKILL.md
+│   ├── agents/openai.yaml
+│   └── references/
+├── prompt-engineer/
+│   ├── SKILL.md
+│   ├── agents/openai.yaml
+│   └── references/
+└── test-master/
     ├── SKILL.md
     ├── agents/openai.yaml
     └── references/
@@ -199,6 +229,9 @@ Use the bundled installer to copy skills from this repo into your local Codex sk
 ./install-skills.sh --group typescript
 ./install-skills.sh --group code
 ./install-skills.sh --group vue
+./install-skills.sh --group react
+./install-skills.sh --group prompt
+./install-skills.sh --group test
 
 # install specific skills
 ./install-skills.sh --skill seo --skill ads-google
@@ -261,6 +294,22 @@ The Code Documenter skill in this repository was originally sourced from:
 
 - [Jeffallan/claude-skills](https://github.com/Jeffallan/claude-skills/tree/main/skills/code-documenter)
 
+The Code Reviewer skill in this repository was originally sourced from:
+
+- [Jeffallan/claude-skills](https://github.com/Jeffallan/claude-skills/tree/main/skills/code-reviewer)
+
 The Vue Expert skill in this repository was originally sourced from:
 
 - [Jeffallan/claude-skills](https://github.com/Jeffallan/claude-skills/blob/main/skills/vue-expert/SKILL.md)
+
+The React Expert skill in this repository was originally sourced from:
+
+- [Jeffallan/claude-skills](https://github.com/Jeffallan/claude-skills/tree/main/skills/react-expert)
+
+The Prompt Engineer skill in this repository was originally sourced from:
+
+- [Jeffallan/claude-skills](https://github.com/Jeffallan/claude-skills/tree/main/skills/prompt-engineer)
+
+The Test Master skill in this repository was originally sourced from:
+
+- [Jeffallan/claude-skills](https://github.com/Jeffallan/claude-skills/blob/main/skills/test-master/SKILL.md)

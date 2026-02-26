@@ -1,4 +1,6 @@
 interface:
   display_name: "Kotlin Specialist"
   short_description: "Kotlin coroutines, KMP, Compose, and Ktor implementation guidance"
+  icon_small: "./assets/icon.svg"
+  icon_large: "./assets/icon.svg"
   default_prompt: "Use $kotlin-specialist to implement Kotlin features with idiomatic coroutines, type-safe models, and platform-aware architecture."

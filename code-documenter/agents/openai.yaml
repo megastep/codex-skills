@@ -1,4 +1,6 @@
 interface:
   display_name: "Code Documenter"
   short_description: "Docstrings, API docs, and developer documentation workflows"
+  icon_small: "./assets/icon.svg"
+  icon_large: "./assets/icon.svg"
   default_prompt: "Use $code-documenter to create and improve code documentation, API specs, and developer guides with coverage reporting."

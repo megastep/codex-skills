@@ -1,0 +1,6 @@
+interface:
+  display_name: "Test Master"
+  short_description: "Comprehensive testing strategy and implementation guidance"
+  icon_small: "./assets/icon.svg"
+  icon_large: "./assets/icon.svg"
+  default_prompt: "Use $test-master to design and implement unit, integration, E2E, performance, and security testing with clear reporting."
