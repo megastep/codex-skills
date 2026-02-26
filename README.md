@@ -14,46 +14,53 @@ Codex-format skills for SEO, blog, and paid ads workflows, converted from Claude
 
 ## Current Skill Set
 
-- `ads`
-- `ads-audit`
-- `ads-google`
-- `ads-meta`
-- `ads-youtube`
-- `ads-linkedin`
-- `ads-tiktok`
-- `ads-microsoft`
-- `ads-creative`
-- `ads-landing`
-- `ads-budget`
-- `ads-plan`
-- `ads-competitor`
-- `blog`
-- `blog-write`
-- `blog-rewrite`
-- `blog-analyze`
-- `blog-brief`
-- `blog-calendar`
-- `blog-strategy`
-- `blog-outline`
-- `blog-seo-check`
-- `blog-schema`
-- `blog-repurpose`
-- `blog-geo`
-- `blog-audit`
-- `blog-chart` (internal helper)
-- `seo`
-- `seo-audit`
-- `seo-page`
-- `seo-technical`
-- `seo-content`
-- `seo-schema`
-- `seo-sitemap`
-- `seo-images`
-- `seo-geo`
-- `seo-plan`
-- `seo-programmatic`
-- `seo-competitor-pages`
-- `seo-hreflang`
+```text
+ads/
+├── ads
+├── ads-audit
+├── ads-google
+├── ads-meta
+├── ads-youtube
+├── ads-linkedin
+├── ads-tiktok
+├── ads-microsoft
+├── ads-creative
+├── ads-landing
+├── ads-budget
+├── ads-plan
+└── ads-competitor
+
+blog/
+├── blog
+├── blog-write
+├── blog-rewrite
+├── blog-analyze
+├── blog-brief
+├── blog-calendar
+├── blog-strategy
+├── blog-outline
+├── blog-seo-check
+├── blog-schema
+├── blog-repurpose
+├── blog-geo
+├── blog-audit
+└── blog-chart (internal helper)
+
+seo/
+├── seo
+├── seo-audit
+├── seo-page
+├── seo-technical
+├── seo-content
+├── seo-schema
+├── seo-sitemap
+├── seo-images
+├── seo-geo
+├── seo-plan
+├── seo-programmatic
+├── seo-competitor-pages
+└── seo-hreflang
+```
 
 ## Repository Layout
 
@@ -99,6 +106,30 @@ Codex-format skills for SEO, blog, and paid ads workflows, converted from Claude
 1. Review [docs/skill-format.md](docs/skill-format.md) for required structure.
 2. Read [CONTRIBUTING.md](CONTRIBUTING.md) for conventions.
 3. Follow [docs/migration-claude-to-codex.md](docs/migration-claude-to-codex.md) when porting additional skills.
+
+## Install Locally
+
+Use the bundled installer to copy skills from this repo into your local Codex skills directory (`$CODEX_HOME/skills`, default `~/.codex/skills`).
+
+```bash
+# install all skills
+./install-skills.sh --all
+
+# install by group
+./install-skills.sh --group seo
+./install-skills.sh --group ads --group blog
+
+# install specific skills
+./install-skills.sh --skill seo --skill ads-google
+
+# preview without copying
+./install-skills.sh --group seo --dry-run
+
+# symlink instead of copy (useful while iterating in this repo)
+./install-skills.sh --group blog --symlink
+```
+
+Then restart Codex to pick up installed skills.
 
 ## Design Principles
 

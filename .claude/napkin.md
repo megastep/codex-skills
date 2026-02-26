@@ -32,3 +32,7 @@
 
 ## Patterns That Work
 - During skill imports, run security hardening as part of conversion rather than as a separate cleanup pass.
+| 2026-02-25 | self | Used reserved Bash variable name `GROUPS` in installer and it collided with shell group IDs. | Avoid special Bash variable names (`GROUPS`, `RANDOM`, etc.) in scripts; use explicit names like `SELECTED_GROUPS`. |
+| 2026-02-25 | self | Empty array handling with `set -u` broke loops on this shell. | Guard array reads with `${arr[*]-}` checks before iterating under nounset.
+## Patterns That Work
+- Installer ergonomics improve with both copy and symlink modes; symlink mode is best for active skill development loops.
