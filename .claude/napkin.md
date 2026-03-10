@@ -63,3 +63,5 @@
 ## Patterns That Work
 - For large skill imports, derive destination names from relative `SKILL.md` paths (`/` to `-`) to avoid collisions and preserve prefixes.
 - After command-style rewrites (like `/skill` to `$`), run targeted grep checks to catch contexts inside backticks and prose.
+| 2026-03-10 | self | Assumed a listed skill folder (`imagegen`) existed in this repo because it was present in the session skill inventory. | Treat the session skill inventory as broader than the current repo; verify the local folder before reusing repo-local patterns. |
+| 2026-03-10 | self | Assumed the Gemini SDK helper `part.as_image()` returned a plain Pillow image and wired save/copy calls directly. | For SDK media parts, prefer extracting raw inline bytes and converting explicitly with Pillow before post-processing or saving. |

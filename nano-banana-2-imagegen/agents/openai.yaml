@@ -1,0 +1,4 @@
+interface:
+  display_name: "Nano Banana 2 Imagegen"
+  short_description: "Generate and edit images with Nano Banana 2"
+  default_prompt: "Use $nano-banana-2-imagegen to generate or edit an image from a prompt and save it locally."
