@@ -1,0 +1,4 @@
+interface:
+  display_name: "Software Graph Analyzer"
+  short_description: "Use Ontoly graph evidence for codebase analysis"
+  default_prompt: "Use $software-graph-analyzer to answer this repository question with Ontoly Software Graph evidence."
