@@ -18,6 +18,7 @@ Codex-format skills for SEO, blog, paid ads, DevOps, full-stack implementation, 
 - `typescript-pro/`: Advanced TypeScript type-system and tooling skill
 - `code-documenter/`: Code and API documentation generation skill
 - `code-reviewer/`: Structured code review and quality audit skill
+- `software-graph-analyzer/`: Ontoly-backed Software Graph analysis for architecture, dependencies, routes, services, configuration, and impact questions
 - `vue-expert/`: Vue 3/Nuxt/Pinia implementation skill
 - `react-expert/`: React 19/Server Components implementation skill
 - `prompt-engineer/`: LLM prompt design, optimization, and evaluation skill
@@ -95,7 +96,8 @@ typescript/
 
 code/
 ├── code-documenter
-└── code-reviewer
+├── code-reviewer
+└── software-graph-analyzer
 
 vue/
 └── vue-expert
@@ -192,6 +194,9 @@ axiom/
 │   ├── SKILL.md
 │   ├── agents/openai.yaml
 │   └── references/
+├── software-graph-analyzer/
+│   ├── SKILL.md
+│   └── agents/openai.yaml
 ├── vue-expert/
 │   ├── SKILL.md
 │   ├── agents/openai.yaml
@@ -341,6 +346,10 @@ The Code Documenter skill in this repository was originally sourced from:
 The Code Reviewer skill in this repository was originally sourced from:
 
 - [Jeffallan/claude-skills](https://github.com/Jeffallan/claude-skills/tree/main/skills/code-reviewer)
+
+The Software Graph Analyzer skill in this repository was originally sourced from:
+
+- [0xsarwagya/ontoly](https://github.com/0xsarwagya/ontoly)
 
 The Vue Expert skill in this repository was originally sourced from:
 
