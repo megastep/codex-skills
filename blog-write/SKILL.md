@@ -23,6 +23,26 @@ follows the 6 pillars of dual optimization (Google rankings + AI citations).
 - `../blog/references/internal-linking.md` — Linking strategy and anchor text rules
 - `../blog/references/visual-media.md` — Image sourcing and chart styling
 
+## Published work titles (required)
+
+Before drafting or localizing references to published works, verify the established
+title in every target language against publisher editions, national/public library
+catalogs, or authoritative bibliographies. Record the chosen title, locale, and
+supporting URL in the research notes. Do not invent a literal translation or
+assume the English title is standard everywhere.
+
+Use the verified title consistently in article titles, metadata, headings, tables,
+body copy, captions, social copy, and accompanying audio/voicemail scripts. Match
+character-name spellings to the referenced edition where relevant. Check inflected
+forms in context rather than applying blind replacements.
+
+If several titles are established, choose one suited to the target audience and
+identify a useful alternative on first mention. Do not present a regional or
+historical title as universal. Keep original titles when established usage supports
+them. If no localized title can be verified, retain the original and report the
+uncertainty. Before delivery, check every affected surface against the title choices;
+report missing evidence rather than claiming this verification passed.
+
 ## Workflow
 
 ### Phase 1: Topic Understanding
